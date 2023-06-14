@@ -1,0 +1,372 @@
+/*Adv-Sectioning */
+
+header, footer {
+    width: 800px;
+    display: block;
+    margin: auto;
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    border: 5px solid gray;
+}
+
+nav, a {
+     padding: 3px;
+     
+}
+
+a {
+  
+     text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: brown;
+}
+main {
+    width: 800px;
+    display: block;
+    margin: auto;
+    background-color: lightcoral;
+    padding: 10px;
+    border: 5px solid gray;
+}
+
+dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    color: azure ;
+    padding-bottom: 10px;
+  }
+
+  dt, dd {
+    padding: 6px;
+    font-size: larger;
+  }
+
+ h1, h2, p, a {
+    color: azure;
+    font-weight: bold;
+ }
+
+ .code-snippet {
+    width: 85%;
+    margin: auto;
+    padding: 5px;
+    background-color:hsl(193, 50%, 93%);
+    color: hsl(193, 70%, 20%);
+    border: thick hsl(193, 30%, 46%); 
+    border-style: double;
+ }
+
+ .code-snippet pre {
+    white-space: pre-wrap;
+    font-size: 20px;
+    color: red;
+
+ }
+
+ table {
+    border-collapse: collapse;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid black;
+  }
+ 
+  caption {
+    margin: 10px;
+    font-weight: bold;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  tr {
+    border: thin solid grey;
+  }
+
+  thead, tr {
+    background-color: whitesmoke;
+    border: thin solid black;
+    border-bottom-width: medium;
+  }
+
+  tbody>tr>:nth-child(1){
+    background-color: hsl(0, 0%, 88%);
+   }
+
+   tbody>tr>:nth-child(n+2):nth-child(-n+5) {
+    background-color: hsl(193, 50%, 93%);
+   }
+
+   tbody>tr>:nth-child(n+6):nth-child(-n+9) {
+    background-color: hsl(5, 49%, 90%);
+   }
+
+   tbody>tr>:nth-child(n+10):nth-child(-n+10) {
+    background-color: hsl(350, 80%, 90%);
+   }
+
+   .c-account {
+    margin-top: 5px;
+   }
+  
+   .login {
+    margin-bottom: 15px;
+   }
+   #account-creation {
+    width: 300px;
+    margin: auto;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: lightpink;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
+
+   #account-login {
+    width: 300px;
+    margin: auto;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: lightpink;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
+   #account-login fieldset {
+    padding: 5px;
+   }
+
+   #account-creation fieldset {
+    padding: 5px;
+   }
+
+   #account-creation legend {
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    
+   }
+
+   #account-login legend {
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+   }
+
+   #account-creation .field-group {
+    padding: 5px;
+
+   }
+
+   
+   #account-login .lfield-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+   }
+
+
+   #account-creation .field-group label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   #account-login .lfield-group label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
+   #account-creation .field-group input {
+    width: 95%;
+    display: block;
+    height: 20px;
+
+   }
+
+   #account-login .lfield-group input {
+    width: 95%;
+    display: block;
+    height: 20px;
+
+   }
+
+
+   #account-creation button {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 20px;
+   }
+
+   #account-login button {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 20px;
+   
+   }
+
+   blockquote {
+      width: 500px;
+      margin: auto;
+      padding: 16px;
+      border: thin solid rgb(5, 9, 71) ;
+      border-left: thick solid rgb(5, 9, 71);
+      font-size: 24px;
+   }
+
+   .poem {
+    border: solid hsl(271, 30%, 46%);
+    border-top: 6px;
+    border-bottom: 6px;
+    border-right: 1px;
+    border-left: 1px;
+    padding: 12px;
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: hsl(271, 30%, 95%);
+   }
+
+
+   #discussion-placeholder {
+    width: 350px;
+    height: 300px;
+    padding: 16px;
+    background-color: rgb(196, 115, 115);
+    border: thin solid white ;
+    border-left: thick solid white;
+    border-bottom: thick solid white ;
+   }
+
+   .ad-notice {
+    width: 240px;
+    height: 300px;
+    margin-top: 53px;
+    float: right;
+    padding: 16px;
+    background-color: violet;
+    border: thin solid white ;
+    border-right: thick solid white;
+    border-bottom: thick solid white;
+    text-transform: uppercase;
+   }
+
+  
+   /*  --------------------------------DROPDOWN-MENU-----------------------------------------------------------  */
+
+
+   .dropdown-nav {
+    background-color:brown;
+    width: 85%;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 265px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   .dropdown-nav .lev1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+
+   .dropdown-nav .lev1 .dropdown {
+    display: inline-block; 
+   }
+
+   .dropdown-nav .lev1 .dropdown button {
+    border: none;
+    background-color: inherit;
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+   }
+
+
+   .dropdown-nav .lev1 .dropdown:hover button {
+    background-color: hsl(200, 100%, 40%);
+   }
+
+   .dropdown-nav .lev1 .dropdown ul {
+    display: none;
+    background-color: brown;
+    min-width: 150px;
+    list-style: none;
+    text-decoration: none;
+    padding-left: .1px;
+   }
+
+   .dropdown-nav .lev1 .dropdown:hover ul {
+    display: block;
+    position: absolute;
+   }
+
+   .dropdown-nav .lev1 .dropdown a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+   }
+
+   .dropdown-nav .lev1 .dropdown li:hover a  {
+    background-color: lightcoral;
+    background-size: 50px;
+   }
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+   
+ 
+
+

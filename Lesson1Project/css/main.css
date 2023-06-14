@@ -1,0 +1,191 @@
+
+/*
+  Author: Julian Burnley
+  Course: CIS233DA
+  Section: 12988
+*/
+
+/* Start predefined styles */
+
+/* Browser reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ 
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  
+  font-variation-settings: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: left;
+    background-color: gray;
+    color: black;
+
+}
+
+.side-menu {
+    float: left;
+    width: 200px;
+    border-right: 2px;
+    border-style: solid;
+    background-color: gray;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+ 
+.side-menu a {
+    background-color: gray;
+    font-size: 1em;
+   display: block;
+    margin-left: 6px;
+    padding: 4px;
+    color: rgb(191, 206, 55);
+}
+
+    
+
+
+nav a:hover {
+    background-color: rgb(191, 206, 55);
+   color: gray;
+   padding: 3px;
+   display: block;
+}
+
+main {
+      width: calc(100% - 202px);
+      float: left;
+      padding: 0;
+     
+
+  }
+
+  .header {
+      background-color: lightgray;
+      text-align: center;
+      padding: 16px;
+      height: 100%;
+
+
+  }
+
+ .header h2 {
+      border-bottom: thin solid;
+      border-left: thick solid;
+      padding-left: 16px;
+      margin-left: 8px;
+      margin-bottom: 8px;
+      font-size: 16px;
+  padding-top: 10px;
+
+  }
+ 
+.home {
+    text-align: left;
+}
+  
+.header p {
+      margin-left: 20px;
+
+  }
+
+  #heading {
+      text-align: center;
+      padding: 25px;
+      color: white;
+  }
+
+
+  footer {
+    background-color: gray;  
+    padding: 20px;
+    color: azure;
+  }
+
+  h3 {
+    padding-left: 10px;
+  }
+  li, a {
+      list-style: none;
+      margin: auto;
+      width: 60%;
+      font-size: 16px;
+      color: aliceblue;
+  }
+
+ .form {
+     display: block;
+     min-height: 500px;
+     max-width: 830px;
+ }
+
+ .shipping {
+     margin-top: 5px;
+     margin-bottom: 5px;
+     margin-left: 10px;
+     margin-right: 10px;
+     width: 40%;
+     float: left;
+ }
+
+ .payment {
+     margin-top: 10px;
+ }
+
+ legend {
+     font-weight: bold;
+ }
+
+ label {
+     display: block;
+     font-weight: bold;
+     margin-top: 8px;
+     padding-left: 3px;
+     
+
+ }
+
+ input {
+     display: block;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     margin-left: 20px;
+     width: 300px;
+     height: 25px;
+    
+ }
+
+ button {
+     margin-top: 8px;
+     margin-bottom: 8px;
+     margin-left: 16px;
+     margin-left: 16px;
+     background-color: teal;
+     color: white;
+     font-weight: bold;
+    border: thin solid white;
+    margin-left: 50px;
+    width: 150px;
+    height: 26px;
+text-align: center;
+ }
+    
+ .button:hover  {
+        background-color:white;
+        color: teal;
+       
+    }

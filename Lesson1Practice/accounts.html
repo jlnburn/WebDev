@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+ 
+<head>
+    <title>Account Creation Component</title>
+    <link rel="stylesheet" type="text/css" href="/Lesson1Practice/css/main.css">
+   </head>
+  
+   <body>
+    <header>
+
+      <h1>adv-forms</h1>
+
+
+      <nav>
+        <a href="index.html ">Home</a>
+        <a href="blog-template.html">Blog Template</a>
+        <a href="planets.html">Planet Table</a>
+        <a href="groups.html ">HTML Grouping</a>
+        <a href="dropdown-menu.html">Dropdown Nav</a>
+        <a href="accounts.html">Login Form Component </a>
+        <a href="text-elements.html ">Text Elements</a>
+      </nav>
+
+
+    </header>
+  
+    <main>
+        <div class="login">
+     <h2>Login Component</h2>
+
+        <p>The following component can be used to allow a user to login to a secure account.</p>
+
+        
+        <form id="account-login" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">  
+
+            <fieldset> 
+
+                <legend>Account Login</legend>
+            <div class="lfield-group">   
+                <label>Username : </label>   
+                <input type="text" placeholder="Enter Username" name="username" required>  
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/" title="Must contain at least one number, one lowercase letter, and one uppercase letter.">        
+            </div>  
+            <div class="lfield-group1">
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+            </fieldset>
+        </form> 
+
+        </div>
+
+        <hr>
+        
+    <div class="account">
+
+        <h2>Account Creation Component</h2>
+
+        <p>The following component can be used to allow a user to create a new account to access password protected areas on a site.</p>
+
+
+        <form id="account-creation" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+
+            <fieldset> 
+
+                <legend>Create an Account</legend>
+
+                <div class="c-account">
+             
+                
+
+                <div class="field-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"> 
+                </div>
+
+                <div class="field-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"> 
+                </div>
+            
+                <div class="field-group">   
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                </div>
+                
+                <div class="field-group">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </div>
+            
+                <div class="field-group">
+                    <label for="psw-repeat"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                </div>
+
+                <div class="field-group">
+                    <button type="submit" onclick="alert('Account Created.')">Create Account</button>
+                    <button type="reset" onclick="resetMessage()">Reset Form</button>
+                    <p id="message1" style="visibility: hidden;">The form has been reset, refresh the page.</p>
+                </div>
+                </div>
+              
+
+            </fieldset>
+            </form>
+
+        </div>
+
+    
+
+    </main>
+  
+    <footer>
+
+      <h2>Developer Info</h2>
+      <p>Name: Julian<br> Git: jlnburn</p>
+      
+    </footer>
+  
+   </body>
+  </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="head">
+    <title>Lesson 1 Project</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Home page">
+    <meta name="keywords" content="advanced styling">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  
+
+   
+
+<body>
+  <div class="side-menu">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="./Checkout.html">Checkout Form</a>
+    
+  </nav>
+  </div>
+<div class="main">
+<main>
+ <h2 id="heading"> Shopping Cart Checkout Component</h2>
+  <div class="header">
+  <header>
+      
+      <section class="home">
+        <h2 class="h2" >Checkout Component</h2>
+        <form class="form" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+    <div class="shipping">
+          <fieldset class="shipping">
+            <legend>Shipping Details</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text">
+         
+            <label for="streetaddress">Street Address</label>
+            <input id="streetaddress" type="text">
+            <label for="streetaddress2">Street Address 2</label>
+            <input id="streetaddress2" type="text">
+            <label for="city">City</label>
+            <input id="city" name="city">
+            <label for="state">State</label>
+            <input id="state" name="state">
+            <label for="zip">Zip Code</label>
+              <input id="zip" name="zip" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+              <label for="user-homephone">Phone Number</label>
+              <input type="tel" id="user-homephone" maxlength="10">
+              <label for="email-address">Email address</label>
+              <input type="email" id="email-address">
+          </fieldset>
+        </div>
+          <fieldset class="payment">
+            <legend>Payment Details</legend>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname">
+            <label for="ccnum">Card number</label>
+            <input type="text" id="ccnum" name="cardnumber"  pattern="`^[0-9- ]{13,19}$`" inputmode="numeric">
+            <label for="expdate">Card Expiration Date</label>
+            <input type="date" id="expdate" name="expdate" value="2017-01-01" >
+            <label for="cvv">CCV Verification Number</label>
+            <input type="text" id="cvv" name="cvv">
+          </fieldset>
+          <button class="button" type="submit">Purchase</button>
+        </form>
+      </section>
+  </header>
+  </div>
+        
+            
+            
+          <footer>
+            <h3>Lesson Activities</h3>
+            <ul>
+                <li><a href="/Lesson1Practice/blog-template.html">Link To Advanced Sectioning Activity</a></li>
+                <li><a href="/Lesson1Practice/groups.html">Link To Advanced Grouping Activity</a></li>
+                <li><a href="/Lesson1Practice/text-elements.html">Link To AdvancedText Activity</a></li>
+                <li><a href="/Lesson1Practice/planets.html">Link To Advanced Tables Activity</a></li>
+                <li><a href="/Lesson1Practice/accounts.html">Link To Advanced Forms Activity</a></li>
+                <li><a href="/Lesson1Practice/dropdown-menu.html">Link To The Nested List Activity"</a></li>
+              </ul>
+          </footer>
+</main>
+</div>
+  </body>
+</html>
