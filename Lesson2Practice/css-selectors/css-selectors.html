@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CIS233DA | L2 | Practice Activities Home</title>
+    <meta charset="UTF-8">
+    <!-- Replace the author content value with your name -->
+    <meta name="author" content="Student Name">
+    <link href="/Lesson2Practice/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Advanced CSS Selectors</h1>
+      <nav>
+        <ol>
+          <li><a href="../index.html" id="active">Home</a></li>
+          <li><a href="../css-colors/alert-messages.html">Colors</a></li>
+          <li><a href="../adv-fonts/font-face.html">Fonts</a></li>
+          <li><a href="../css-rules/import-fallback.html">Rules</a></li>
+          <li><a href="../adv-styling/social-media-card.html">Styling</a></li>
+          <li><a href="../css-units/css-units.html">Units</a></li>
+          <li><a href="../css-variables/">Variables</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <!-- The activity code will be within this main element. -->
+     <h2>Types of Selectors</h2>
+     <table class="stable">
+        <tr>
+          <th>Type </th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Element</td>
+          <td>&lt;p&gt;: The Paragraph element. The &lt;p&gt; HTML element represents a paragraph.</td>
+          <td>p {
+            margin: 0;
+            text-indent: 3ch;
+          }</td>
+        </tr>
+        <tr>
+          <td>Class</td>
+          <td>.class: The class attribute specifies one or more classnames for an element.</td>
+          <td>&lt;h2 class=&quot;country&quot;&gt;USA&lt;/h2&gt; <br>.country {
+            background-color: black;}</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>#id: The id selector is used to select one unique element.</td>
+            <td>&lt;p id = &quot;para&quot;&gt;Center text in this paragraph&gt;<br>#para {text-align: center;}</td>
+          </tr>
+          <tr>
+            <td>Universal</td>
+            <td>The universal selector selects all HTML elements on the page.</td>
+            <td>* {text-align: center;}</td>
+          </tr>
+          <tr>
+            <td>Pseudo-class</td>
+            <td>:hover: A pseudo-class is used to define a special state of an element.</td>
+            <td>:hover {background-color: blue;}</td>
+          </tr>
+          <tr>
+            <td>Pseudo-element</td>
+            <td>::before: A CSS pseudo-element is used to style specified parts of an element.</td>
+            <td>h1::before {content: url(smiley.gif);}</td>
+          </tr>
+          <tr>
+            <td>Combinator</td>
+            <td>.parent &gt; .child: A combinator explains the relationship between the selectors</td>
+            <td>div &gt; p {background-color: yellow;}</td>
+          </tr>
+          <tr class="lastrow">
+            <td>Attribute</td>
+            <td>[href$=&quot;.pdf&quot;]: An attribute selector is used to select elements with a specified attribute.</td>
+            <td>a[target] {background-color: yellow;}</td>
+          </tr>
+      </table>
+    </main>
+    <footer>
+      <div class="container">
+        <p><strong>Course Info</strong>
+          <span><strong>Course</strong>: CIS233DA</span>
+          <span><strong>Section</strong>: Enter 5-digit section number</span>
+          <span><strong>Instructor</strong>: Enter your instructor's name</span>
+        </p>
+        <p>
+          <strong class="sinfo">Student Info</strong>
+          <span><strong>Name</strong>: Your first and last name</span>
+          <span><strong>MEID</strong>: Your MEID</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

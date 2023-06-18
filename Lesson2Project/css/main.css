@@ -1,0 +1,183 @@
+/*
+Name : Julian Burnley
+Course: CIS233DA
+Section: 12988 
+Instructor : Brian Thurber
+*/
+
+/* Browser reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+   /* Color scheme*/
+
+   :root {
+--background-color-body:#a4b6cc;
+--text-color-body: #000000;
+--text-color-heading: #F0F8FF;
+--background-color-header: #000080;
+--card-background-color:#DCE2C8;
+--accent-color: rgb(1, 44, 1);
+--border-color-dark: hsl(0,100%,25%);
+--shadow-color-light: hsl(0,100%,25%,0.2);
+
+   }
+
+
+ /*Body*/
+   body {
+   background-color: var(--background-color-body);
+   color: var(--text-color-body);
+   font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+   padding-left: 0.125em;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }  
+
+
+html {
+    height: 100%;
+}
+
+
+   h2 h3 {
+      font-family: 'Roboto Slab', serif, 'Courier Prime', monospace;
+   
+   }
+
+   
+   
+header {
+   width: 100vw;
+   height: 6.25em;
+   background-color: var(--background-color-header);
+   color: var(--text-color-heading);
+   text-align: center;
+ padding-top: 0.625em;
+ padding-bottom: .5em;
+ padding-right: 100px;
+}
+
+
+
+.H1 {
+float: left;
+position: relative;
+clear: both;
+}
+
+.H1 {
+  padding-left: 37vw;
+  font-size: 1.875em;
+  padding-top: 1.25em;
+  font-size: 1.875em;
+}
+.NAV  {
+  float: right;
+  padding-right: 35em;
+  padding-top: 1.3em;
+}
+
+
+nav {
+   font-size: 1em;
+ }
+
+
+
+ nav a{
+  color: var(--text-color-heading);
+  font-weight: bolder;
+  text-decoration: none;
+  padding-left: 0.625em;
+  display: block;
+  margin-top: 0.375em
+}
+
+ a:hover {
+   padding-top: 0.6em;
+  background-color: var(--text-color-heading);
+  color: var(--background-color-header);
+   text-decoration: none;
+}
+
+ 
+
+p:first-child {
+  font-weight:  bold; text-align: center;
+  border-bottom: 0.1875em solid;
+  border-bottom-width: thin;
+  border-color: var(--border-color-dark) ;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+}
+
+
+
+.card{
+  padding: 0.6em;
+  width: 18.75em;
+  height: 7.8125em;
+  border: 0.1875em solid var(--border-color-dark);
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  padding-right: 3em;
+  padding-left: 0.25em;
+margin-bottom: 1.25em;
+background-color: var(--card-background-color);
+border-radius: 20px 6px;;
+ text-align: center;
+ 
+
+ 
+ box-shadow: var(--shadow-color-light) 10px 10px 5px;
+}
+
+.ST, .PES, .PCS, .CS, .AS  {
+  padding: 40px;
+
+  text-align: center;
+  float: left;
+  margin-top: 1px; 
+
+}
+
+
+#f1, #f2 {
+  display: inline-block;
+  color: var(--text-color-heading);
+}
+
+
+.footer footer {
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 60px;
+  color:white;
+  background-color: lightcoral;
+  text-align: center;
+}
+
+footer h3 {
+  padding: 1.5em;
+}
+
+  
+
+h2, h3, p {
+  font-family: monospace, 'Times New Roman', Times, serif;
+  color: var(--accent-color);
+  display: block;
+  padding: 0.1875em;
+
+}
+
+
+

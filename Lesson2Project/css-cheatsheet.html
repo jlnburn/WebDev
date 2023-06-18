@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 2 Project</title>
+    <link href="css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Page to help remember  CSS selectors">
+    <meta name="keywords" content="study, reminder,  selectors, elements, class. pseudo-class.">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+      </style>
+  </head>
+  <body>
+   
+    <header>
+      <div class="header">
+      <h1 class="H1">Selector {} Cheatsheet</h1>
+    </div>
+      
+      
+    <nav class="NAV">
+        <a href="index.html ">Home</a>
+      <a href="css-cheatsheet.html">CSS Cheatsheet</a>
+    </nav>
+  
+     
+   </header>
+
+
+  
+
+
+ <main>
+
+  
+
+
+<div class="ST">
+
+  <h3 id="H2">Selector Types</h3>
+
+  
+
+  <div class="card">
+      <p>Element</p>
+      <p>a {color: red;}, </p>
+     <p> h2 {font-size 16px;}</p>
+</div>
+
+
+  
+
+<div class="card">
+  <p>Class</p>
+  <p>.center {text-align: left;},</p>
+  <p> .front {color: black;} </p>
+</div>
+
+
+  
+ <div class="card">
+        <p>Id</p>
+        <p>#name {color:green;}</p>
+       <p>#h1 {color: blue;}</p>
+</div>
+   
+
+   
+ <div class="card">
+    <p>Universal</p>
+    <p>* {text-align: left;} </p>
+</div>
+      
+
+     
+ <div class="card">
+  <p>Multiple</p>
+   <p>h1 h2 h3 {text-align: center;}, </p>
+   <p>p span {color: purple;} </p>
+</div>
+      
+
+        
+ <div class="card">
+  <p>Pseudo-class</p>
+  <p>button:hover {color: red;}</p>
+  <p> tr:only-child {align: center;} </p>             
+</div>
+          
+
+          
+<div class="card">
+<p>Pseudo-element</p>
+<p>:first-child::first-line {font-weight: 400;}</p>
+<p>p::first-line {text-transform: upper-case;}</p>
+</div>
+
+            
+<div class="card">
+  <p>Attribute</p>
+  <p>h1[rel="external"] { color: red; }</p>
+  <p> input[type="text"] { padding: 3px; }</p>
+</div>
+
+ 
+<div class="card">
+<p>Combinator</p>
+<p>h1[rel="external"] { color: red; }</p>
+<p> ul > li {border-top: 5px solid red;}</p>
+</div>
+  
+</div>
+
+
+
+
+
+<div class="PES">
+
+  <h3 class="H3">Pseudo-Element Selectors</h3>
+
+
+
+  
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::first-letter</p>
+<p>Adds a special style to the first letter of a text.</p>
+
+</div>
+
+
+   
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::before</p>
+<p> Insert some content before. </p>
+
+</div>
+
+      
+   
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>:::after</p>
+<p>Insert content after an element.</p>
+
+  </div>
+
+      
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::marker</p>
+<p>Insert content after an element.</p>
+
+</div> 
+
+  
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::selection</p>
+<p>Matches portion of element selected. </p>
+
+</div>
+
+          
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::first-line</p>
+<p>Selects the first line of each element. </p>
+
+            
+</div> 
+
+         
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::grammar-error</p>
+<p>Matches grammar error as flagged by browser.</p>
+
+                
+</div> 
+
+           
+<div class="card">
+<p>Pseudo-Element Selectors</p>
+<p>::spelling-error</p>
+<p>Matches spelling error as flagged by browser.</p>
+
+                 
+</div> 
+
+</div>
+ 
+
+
+
+<div class="PCS">
+
+  <h3 class="H3">Pseudo-Class Selectors</h3>
+
+
+
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:dir</p>
+<p>Selects an element based on its directionality.</p>
+
+</div> 
+
+    
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>::lang</p>
+<p>Select an element based on its content language.</p>
+
+</div> 
+ 
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:any-link</p>
+<p>Matches either :link or :visited</p>
+
+</div> 
+
+     
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:link</p>
+<p>Matches links that have not yet been visited</p>
+
+</div> 
+    
+        
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:local-link</p>
+<p>Matches the target URL.</p>
+
+</div> 
+
+            
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:target</p>
+<p>of Matches the document URL.</p>
+
+</div> 
+
+             
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:target-within</p>
+<p>Matches elements which are the target of the document URL.</p>
+
+</div> 
+
+                  
+             
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:scope</p>
+<p>Represents elements that are a reference point for selectors .</p>
+
+</div> 
+
+              
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:hover</p>
+<p>Matches when a user designates an item with a pointing device.</p>
+</div> 
+  
+                    
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>::active</p>
+<p>Matches when an item is being activated by the user.</p>
+
+                        
+</div> 
+
+                   
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:focus</p>
+<p>Matches when an element has focus.</p>
+
+</div> 
+
+                      
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:focus-visible</p>
+<p>Matches when the element should be visibly focused.</p>
+
+                          
+</div> 
+
+                        
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:focus-within</p>
+<p>Matches an element to which :focus applies.</p>
+
+                              
+</div> 
+
+                          
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:current</p>
+<p>Represents the element or ancestor of the element that is being displayed.</p>
+
+</div> 
+
+                            
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>::past</p>
+<p>Represents an element that occurs before the :current element.</p>
+
+                                  
+</div> 
+
+                         
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:future</p>
+<p>Represents an element that occurs after the :current element</p>
+
+                                
+</div> 
+                              
+                              
+  <div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:playing</p>
+<p>Represents a media element when that element is playing.</p>
+
+                                    
+</div> 
+
+
+                                  
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:paused</p>
+<p>Represents a media when that element is paused.</p>
+
+                                      
+</div> 
+
+                                    
+                                 
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:autofill</p>
+<p>when an input has been auto-filled .</p>
+
+                                      
+</div> 
+
+                                                 
+                                  
+<div class="card">
+<p>Pseudo-Class Selectors</p>
+<p>:enabled</p>
+<p>Represents an element that is in an enabled state.</p>
+                                    
+                                    
+</div> 
+                                  
+                                       
+</div>                             
+                                
+  
+
+
+
+
+<div class="CS">
+
+  <h3>Combinator Selectors</h3>
+
+
+<div class="card">
+<p>Combinator Selectors</p>
+<p>Whitespace</p>
+<p>Indicates second selector must be a descendant of the first selector.</p>
+
+
+</div> 
+  
+  
+<div class="card">
+<p>Combinator Selectors</p>
+<p>Asterisk [*]</p>
+<p>Represents a Grandchild or later. </p>
+
+</div> 
+
+ 
+<div class="card">
+<p>Combinator Selectors</p>
+<p>Greater-than [>]</p>
+<p>When the second selector must be a child of the first selector.</p>
+
+</div> 
+  
+ 
+<div class="card">
+<p>Combinator Selectors</p>
+<p>Plus [+]</p>
+<p>Represents Next-sibling</p>
+
+</div> 
+
+  
+<div class="card">
+<p>Combinator Selectors</p>
+<p>Tilde [~]</p>
+<p>Represents the Subsequent-sibling; </p>
+</div> 
+
+  
+</div> 
+
+
+
+
+
+<div class="AS">
+
+  <h3>Attribute Selectors</h3>
+
+
+
+
+<div class="card">
+<p>Attribute Selectors</p>
+<p>h2[title]</p>
+<p>Attribute Only Match.</p>
+
+</div> 
+
+
+<div class="card">
+<p>Attribute Selectors</p>
+<p>[att=val]</p>
+<p>Targets an element where the attribute value is exact.</p>
+</div> 
+
+
+<div class="card">
+<p>Attribute Selectors</p>
+<p>[att|=val]</p>
+<p>Matches attribute value is exactly "val" or starts with "val". </p>
+</div> 
+
+
+<div class="card">
+<p>Attribute Selectors</p>
+<p>[att^=val]</p>
+<p>Start With Match.  Requires caret symbol. </p>
+</div> 
+
+
+<div class="card">
+<p>Attribute Selectors</p>
+<p>[att$=val]</p>
+<p>Ends With Match. </p>
+</div> 
+
+<div class="card">
+  <p>Attribute Selectors</p>
+  <p>[att~=val]</p>
+  <p>List Match.</p>
+</div>
+
+<div class="card">
+<p>Attribute Selectors</p>
+<p>[att*=val]</p>
+<p>Contains Match. </p>
+
+
+  </div> 
+
+</div> 
+
+
+ </main>
+
+
+<div class="footer">
+
+  <footer>
+
+    <h3>Name: Julian Git: jlnburn</h3>
+    
+  </footer>
+</div>
+
+</body>
+</html>
+    

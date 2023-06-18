@@ -1,0 +1,269 @@
+
+/*
+  Author: Julian Burnley
+  Course: CIS233DA
+  Section: 12988
+*/
+
+/* Start predefined styles */
+
+/* Browser reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ 
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  
+  font-variation-settings: normal;
+
+  font-weight: 400;
+}
+/*
+
+*/
+
+
+
+th {
+  background-color: darkcyan;
+  border-bottom: solid thick black;
+  padding: 8px;
+  color: yellow;
+  font-weight: 800;
+}
+
+
+td {
+  padding: 8px;
+  color: black ;
+  font-weight: 800;
+  border-bottom: solid thin black;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+tr {
+  background-color: aquamarine;
+  border-bottom: solid thick black;
+
+}
+
+tr.lastrow td {
+  background-color: aquamarine;
+  border-bottom: solid thick black;
+}
+tr:nth-child(odd) {
+  background-color: cyan;
+  
+}
+ tbody>tr>:nth-child(3){
+  color:red;
+font-family: "Lucida Console", monospace;
+ }
+
+ .stable {
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+p[strong^="Student"] {
+  display: block;
+  padding-bottom: 8px;
+}
+
+strong {
+  display: block;
+}
+
+:root {
+  --text-color-dark:#000000;
+  --text-color-light:#ffffff;
+  --background-color-dark:#3A1B04;
+  --background-color-light:rgb(29, 155, 240);
+  --text-color-warning: hsl(0, 0%, 0%, 1);
+  --background-color-warning: hsl(60, 100%, 50%, 1);
+  --border-color-warning: hsl(0, 100%, 50%, 1);
+  --text-color-error: hsl(0, 0%, 0%, 0.5);
+  --background-color-error: hsl(0, 100%, 50%, 1);
+  --border-color-error: hsl(60, 100%, 50%, 1);
+  --text-color-error: hsl(0, 0%, 0%, 1);
+  --background-color-info: hsl(240, 100%, 50%, 1);
+  --border-color-info: hsl(0, 0%, 0%, 1);
+  --text-color-info: hsl(0, 0%, 100%, 1);
+  --twitter-blue: rgb(29, 155, 240);
+
+}
+
+html {
+  font-size: 16px;
+}
+
+.em-units, .rem-units  {
+  font-size: 1.3em;
+}
+
+
+body {
+  color: var(--text-color-dark, black);
+
+} 
+
+main {
+  padding: .625em;
+}
+
+main p {
+  margin-bottom: 1.25em;
+}
+
+
+.alert-warning {
+  width: 40vw;
+  border: 2px solid  var(--border-color-warning);
+  margin: .5em auto;
+  margin-top: 140px;
+  padding: .5em;
+  background-color: var(--background-color-warning);
+  color: var(--text-color-warning);
+} 
+
+.error {
+  width: 40vw;
+  border: 2px solid  var(--border-color-error);
+  margin: .5em auto;
+  margin-top: 140px;
+  padding: .5em;
+  background-color: var(--background-color-error);
+  color: var(--text-color-error);
+} 
+
+.information {
+  width: 40vw;
+  border: 2px solid  var(--border-color-info);
+  margin: .5em auto;
+  margin-top: 140px;
+  padding: .5em;
+  background-color: var(--background-color-info);
+  color: var(--text-color-info);
+} 
+
+.social-card-twitter {
+  width: 300px;
+  height: 400px;
+  overflow-y: scroll;
+  border: thin solid var(--twitter-blue);
+  border-radius: .5em 5%;
+  padding: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: hsla(0, 10%, 40%, 50%) 3px 3px 5px;
+  background-color: hsl(0, 0%, 50%, .3);
+}
+
+header {
+  text-align: center;
+  padding-top: 0.625em;
+  background-color: var(--background-color-light); 
+}
+nav {
+  font-size: 1em;
+  background-color: var(--background-color-dark, rgb(34, 29, 29));
+}
+nav a{
+  text-decoration: none;
+  padding: 1em;
+  color: var(--text-color-light);
+}
+nav a:hover {
+  background-color: hsl(0, 15%, 90%);
+  color: hsl(0, 15%, 15%);
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+}
+nav ol {
+  list-style-type: none;
+
+}
+nav ol li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+#font-import {
+  font-family: 'Roboto Slab Variable', 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+
+
+h2 {
+  font-family: 'Roboto Slab', 'sans-serif';
+  font-weight: 900;
+  font-size: 1.2em;
+  text-align: left; 
+  margin-bottom: 10px;
+}
+
+#error {
+  color: var(--text-color-error);
+}
+
+#info {
+  color: var(--text-color-info);
+}
+
+#warning {
+  color: var(--text-color-warning);
+}
+
+h3 {
+  font-family: 'Roboto Slab', 'sans-serif';
+  font-weight: 100;
+  color: green;
+  
+}
+footer {
+  padding: 0.375em;
+  background-color:var(--background-color-light);
+  font-size: 1em;
+}
+footer .container {
+  width: 28.125em;
+  height: 900px;
+  background-color:var(--background-color-light);
+  margin: 0px 0px 0px 0px;
+  font-size: 1em;
+}
+footer p {
+  width: 13.75em;
+  float: left;
+  font-size: 1em;
+}
+  footer span {
+    display: block;
+    margin-left: 8px;
+  }
+
+  .sinfo {
+    display: block;
+    padding-bottom: 8px;
+  }
+
+  .aside-units {
+    float: right;
+    margin-bottom: 500px;
+  }
+
+/* End predefined styling */
+
+
