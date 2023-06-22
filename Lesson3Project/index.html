@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 3 Project</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Home page">
+    <meta name="keywords" content="cheatsheet, flexbox properties">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+
+  
+  <body>
+
+    <section class="left-column">
+<h1>Under The Hood</h1>
+
+<nav>
+<ul>
+  <li><a href="/Lesson3Project/index.html">Home</a></li>
+  <li><a href="/Lesson3Project/flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
+  <li><a href="/Lesson3Practice/index.html">Lesson 3 Practice Activities</a></li>
+</ul>
+</nav>
+<footer>
+  <p><span>Developed by:</span> Julian Burnley </p><p><span>Git Id:</span> jlnburn </p> <p><span>Lesson 3</span> </p>
+  <p><small>March 19, 2022</small></p>
+</footer>
+
+    </section>
+
+    <main>
+
+      <h2>HTML</h2>
+      <p> &lt;section class=&quot;left-column&quot;&gt;<br>&lt;h1&gt;Flexbox Cheatsheet&lt;/h1&gt;<br>&lt;nav&gt;<br>&lt;ul&gt;<br>&lt;li&gt;&lt;a href=&quot;/Lesson3Project/index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;/Lesson3Project/flexbox-cheatsheet.html&quot;&gt;Flexbox Cheatsheet&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;/Lesson3Practice/index.html&quot;&gt;Lesson 3 Practice Activities&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;/nav&gt;<br>&lt;footer&gt;<br>&lt;p&gt;&lt;span&gt;Developed by:&lt;/span&gt; Julian  &lt;/p&gt;&lt;p&gt;&lt;span&gt;GitHub Id:&lt;/span&gt; jlnburn &lt;/p&gt;<br>&lt;p&gt;&lt;small&gt;March 19, 2022&lt;/small&gt;&lt;/p&gt;<br> &lt;p&gt;&lt;span&gt;Lesson 3&lt;/span&gt; &lt;/p&gt;<br>&lt;/footer&gt;<br>&lt;/section&gt;</p>
+      <h2>CSS</h2>
+
+      <p>/*  color scheme info */<br>
+        :root {<br>
+          --light-left-body-text-body-background-color: #d8dfe2;<br>
+          --very-light-color-property-term:#fffff5;<br>
+          --medium-color-border-link-left: #48d5d1;<br>
+          --left-background-shadow-body-color:#0b1b5b;<br>
+          --medium-dark-main-code-color: #2160c4;<br>
+          --span-medium-dark-color:#5b0b22;<br>
+        }<br>
+        
+        /* fonts*/<br>
+        @font-face {<br>
+          font-family: 'Roboto Slab';<br>
+          src: url('RobotoSlab-VariableFont_wght.ttf') format('truetype');<br>
+          
+          font-variation-settings: normal;
+        }</p>
+
+        
+        .left-column {<br>
+        height: 100vh;<br>
+        flex-shrink: 0;<br>
+        flex-grow: 0;<br>
+        flex-basis: 250px;<br>
+        background-color: var(--medium-dark-code-color);<br>
+        color: var(--light-left-body-background-color);<br>
+        display: flex;<br>
+        flex-direction: column;<br>
+        flex-wrap: nowrap;<br>
+        justify-content: space-between;<br>
+        border-right: thick solid var(--left-border-link-color);<br>
+        box-shadow: 10px 0 20px -5px var(--left-column-background-text-shadow-color);<br>
+        padding: .65em;<br>
+        text-align: center;
+      }
+
+
+
+
+
+    </main>
+
+  </body>
+</html>
+
+ <!------Making a change to see if I can trigger a commit-->
+

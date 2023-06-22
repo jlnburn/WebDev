@@ -1,0 +1,219 @@
+/*
+  Name:Julian Burnley
+  Course and Section:CIS233DA # 12988
+  Instructor Name:Brian Thurber
+*/ 
+
+/*  color scheme info */
+:root {
+  --light-left-body-text-body-background-color: #d8dfe2;
+  --very-light-color-property-term:#fffff5;
+  --medium-color-border-link-left: #48d5d1;
+  --left-background-shadow-body-color:#0b1b5b;
+  --medium-dark-main-code-color: #2160c4;
+  --span-medium-dark-color:#5b0b22;
+}
+
+/* fonts*/
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  
+  font-variation-settings: normal;
+}
+
+
+
+
+
+/* Resets sizing method and removes browser defaults for all elements */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* body*/
+body {
+  background-color: var(--light-left-body-text-body-background-color);
+  color: var(--left-background-shadow-body-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.left-column {
+  height: 100vh;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 250px;
+  background-color: var(--left-background-shadow-body-color);
+  color: var(--light-left-body-text-body-background-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-right: thick solid var(--medium-color-border-link-left);
+  box-shadow: 10px 0 20px -5px var(--left-background-shadow-body-color);
+  padding: .65em;
+  text-align: center;
+}
+
+.left-column h1 {
+  font-size: 1.3rem;
+}
+
+.left-column nav a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--very-light-color-property-term);
+  padding: .75em;
+}
+
+.left-column nav a:hover, a:active {
+ background-color: var(--medium-color-border-link-left);
+ color: var(--left-background-shadow-body-color);
+ text-align: center;
+  text-decoration: none;
+}
+
+.left-column footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  padding-right: 1em;
+  overflow: auto;
+}
+
+main h2, h3 {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.term-group {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 2px var(--medium-color-border-link-left);
+  padding: 1em;
+  background-color: var(--very-light-color-property-term);
+  box-shadow: 10px  10px 5px 0 var(--left-background-shadow-body-color);
+}
+
+.property-group {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 2px var(--medium-color-border-link-left);
+  padding: 1em;
+  background-color: var(--very-light-color-property-term);
+  box-shadow: 10px  10px 5px 0 var(--left-background-shadow-body-color);
+  padding-right: 20em;
+}
+
+.item-group {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 2px var(--medium-color-border-link-left);
+  padding: 1em;
+  background-color: var(--very-light-color-property-term);
+  box-shadow: 10px  10px 5px 0 var(--left-background-shadow-body-color);
+  padding-right: 20em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding-bottom: 1.5em;
+}
+
+.term-group dt {
+  border-right: 2px solid var(--medium-color-border-link-left);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10rem;
+  font-weight: bold;
+  padding-right: 7px;
+}
+
+.term-group dd {
+  display: flex;
+  flex-direction: column;
+  padding-left: .5em;
+}
+
+.property-group dt {
+  border-right: 2px solid var(--medium-color-border-link-left);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10rem;
+  font-weight: bold;
+  padding-right: 7px;
+}
+
+
+.property-group dd {
+  display: flex;
+  flex-direction: column;
+  padding-left: .5em;
+}
+
+.item-group dt {
+  border-right: 2px solid var(--medium-color-border-link-left);
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10rem;
+  font-weight: bold;
+  padding-right: 7px;
+}
+
+.item-group dd {
+  display: flex;
+  flex-direction: column;
+  padding-left: .5em;
+}
+
+
+
+
+
+.property-group span {
+  font-family:cursive;
+  color: var(--medium-color-border-link-left);
+  
+
+}
+
+.item-group span {
+  font-family:cursive;
+  color: var(--medium-color-border-link-left);
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!------Making a change to see if .I can trigger a commit-->*/

@@ -1,0 +1,345 @@
+
+/*
+  Student Name: Julian Burnley
+  Course Section:12988
+  Instructor's Name:Brian Thurber
+*/
+/* add color scheme info here */
+:root {
+  --dark-color: #80391e;
+  --light-color: 	#44bcd8;
+  --new-color: #bcdcec;
+  --accent-color: #063970;
+  --button-color: rgb(95, 13, 13);
+  --shadow-color: #b97455;
+}
+/* Resets sizing method and removes browser defaults for all elements */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+  
+  @supports (display: flex) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    ul {display: flex;
+      flex-direction: row;
+
+     }
+  
+
+      
+    }
+  
+
+/* default styles */
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.component-wrapper {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: thin solid var(--accent-color);
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+h2 {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--dark-color);
+  display: flow-root;
+  height: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  float:left
+}
+
+a {
+  float: left;
+  height: 100%;
+  display: block;
+  padding-top: .85em;
+  padding-bottom: .85em;
+  padding-left: .5em;
+  padding-right: .5em;
+  color: var(--light-color);
+  text-decoration: none;
+
+
+}
+
+a:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+
+.btn-login {
+  float: right;
+  height: 100%;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  border: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn-login:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 8rem;
+
+}
+
+.column {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+
+main {
+  padding: 2rem;
+}
+
+p {
+  padding: 1rem;
+  
+}
+
+aside {
+  padding: .5rem;
+  background-color: var(--new-color);
+  border-left: solid 2px var(--accent-color);
+  margin-bottom: -5rem;
+  text-align: left;
+  
+}
+
+.column-panel {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 45%;
+  padding: .5rem;
+  border: thin solid var(--accent-color);
+  margin-left: .5rem;
+  margin-right: .5rem;
+  border-radius: .5rem;
+  overflow-wrap: anywhere;
+}
+
+p h2 {
+  text-align: left;
+}
+
+@media screen and (min-width: 60rem) {
+   .mcolumn {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 66%;
+
+  }
+   .ascolumn {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 34%; 
+  }
+
+ 
+}
+
+@media screen and (max-width: 32rem) {
+  .column-panel {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+  }
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+header {
+  min-height: 6em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header h1 {
+  margin-top: .5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: .85em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.product-info p span {
+  align-self: flex-end;
+}
+.product-id, .price, .description {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+}
+
+.product-card {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  box-shadow: 3px 0px 6px var(--shadow-color);
+  max-width: 18em;
+  min-width: 12em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 1em;
+border-radius: .5em;
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 5em ;
+  border-top-right-radius: 5em;
+  border-bottom: 2px solid var(--dark-color);
+}
+
+.product-info {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+ .product-id {
+  font-size: .75rem;
+  padding-bottom: .5rem;
+  width: max-content;
+  align-self: flex-end;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  align-self: flex-end;
+  padding-bottom: .75em;
+}
+
+.dollar::before {
+  content: '$';
+}
+
+
+ 
+  .btn-add-cart {
+    border-radius: 1em;
+    padding: 0.75em;
+    width: 10em;
+    border-style: solid var(--dark-color);
+    border-width: thin;
+    box-shadow: 4px 2px var(--shadow-color);
+    margin-top: 1em;
+    align-self: center;
+    background-color: var(--button-color);
+    color: var(--light-color);
+    }
+
+    .btn-add-cart:hover {
+      background-color: var(--light-color);
+      color: var(--dark-color);
+      box-shadow: 4px 2px var(--accent-color);
+    }
+/*
+    .active {
+      background-color: var(--accent-color);
+      color: var(--light-color);
+    
+    }
+*/
+    
+
+

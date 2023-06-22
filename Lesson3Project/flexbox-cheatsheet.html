@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 3 Project</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Home page">
+    <meta name="keywords" content="cheatsheet, flexbox properties">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+
+  
+  <body>
+
+    <section class="left-column">
+<h1>Flexbox Cheatsheet</h1>
+
+<nav>
+<ul>
+  <li><a href="/Lesson3Project/index.html">Home</a></li>
+  <li><a href="/Lesson3Project/flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
+  <li><a href="/Lesson3Practice/index.html">Lesson 3 Practice Activities</a></li>
+</ul>
+</nav>
+<footer>
+  <p><span>Developed by:</span> Julian  </p><p><span>GitHub Id:</span> jlnburn </p> 
+  <p><small>March 19, 2022</small></p>
+  <p><span>Lesson 3</span> </p>
+  
+</footer>
+
+    </section>
+
+    <main>
+
+    
+      <h2>Terminology</h2>
+      <dl>
+        <div class="term-group">
+            <dt>Flex Container</dt>
+            <dd>A flex container is an HTML element whose display property's value is flex or inline-flex.</dd>
+        </div>
+        
+        <div class="term-group">
+            <dt>Flex Items</dt>
+            <dd>Flex items are the direct children of a flex container.</dd>
+        </div>
+        
+        <div class="term-group">
+        
+            <dt>Flex Directions</dt>
+            <dd>The flex direction defines the direction flex items are placed in the flex container.</dd>
+        </div>
+        
+        <div class="term-group">
+        
+            <dt>Main axis</dt>
+            <dd>The defining direction of how the flex items are placed in the flex container.</dd>
+        </div>
+        
+        <div class="term-group">
+        
+            <dt>Main size properties</dt>
+            <dd>The main size of a flex item is the size it has in the main dimension.</dd>
+        </div>
+        
+        <div class="term-group">
+        
+            <dt>Cross axis</dt>
+            <dd> The cross axis in flexbox runs perpendicular to the main axis.</dd>
+        </div>
+        
+        <div class="term-group">
+        
+            <dt>Cross size properties</dt>
+            <dd>The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.</dd>
+        </div>
+        
+          </dl>
+        
+    
+      <h2>Properties</h2>
+
+      <section class="container">
+        
+        <div>
+          <h3>Flex Container Properties</h3>
+
+          <dl>
+            <div class="property-group">    
+                <dt>display</dt>
+                <dd>display:flex;<span>/* enables flex context for direct children. */</span></dd>
+                
+                
+            </div>
+        
+            <div class="property-group"> 
+                <dt>flex-direction</dt>
+                <dd>flex-direction: row;<span>&nbsp;&nbsp;/* establishes the main-axis. */</span></dd>
+        
+            </div>
+        
+            <div class="property-group"> 
+                <dt>flex-wrap</dt>
+                <dd>flex-wrap: nowrap;<span>&nbsp;&nbsp;/* all flex items will be on one line */</span></dd>
+               
+                
+            </div>
+        
+            <div class="property-group"> 
+                <dt>flex-flow</dt>
+                <dd>flex-flow: column wrap;&nbsp;&nbsp;<span>/* flex-direction and flex-wrap properties. */</span></dd>
+            </div>
+        
+            <div class="property-group"> 
+                <dt>justify-content</dt>
+                <dd>justify-content:flex-start;<span>/* items packed to start of the flex-direction.*/</span></dd>
+                
+            </div>
+        
+            <div class="property-group"> 
+                <dt>align-items</dt>
+                <dd>align-items: stretch;<span>/* fill the container respecting min-widthmax-width. */</span></dd>
+            </div>
+        
+            <div class="property-group"> 
+                <dt>align-content</dt>
+                <dd>align-content: flex-start;&nbsp;&nbsp;<span>/* items packed to the start of the container.*/</span></dd>
+        
+            </div>
+            
+               </dl>
+        
+        </div>
+        
+
+        
+<div>
+          <h3>Flex Item Properties</h3>
+            <dl>
+          <div class="item-group"> 
+            <dt>flex-grow</dt>
+            <dd>flex-grow: 3;<span>/* represents a growth factor of 3.*/</span></dd>
+          </div>
+
+          <div class="item-group"> 
+              <dt>flex-order</dt>
+              <dd>order; -3;<span>/* moves  items 3 places column or row.*/</span></dd>
+      
+          </div>
+
+          <div class="item-group"> 
+            <dt>flex-shrink</dt>
+            <dd>flex-shrink: 2;<span>/* represents a shrinkage factor of 2.*/</span></dd>
+    
+        </div>
+
+        <div class="item-group"> 
+          <dt>flex-basis</dt>
+          <dd>flex-basis: 200px;<span>/* the flex item starts at 200px.*/</span></dd>
+  
+      </div>
+
+      <div class="item-group"> 
+        <dt>flex</dt>
+        <dd>flex: 0 0 200px;<span>/* item does not grow or shrink and starts out at 200px. */</span></dd>
+
+    </div>
+
+    <div class="item-group"> 
+      <dt>align-self</dt>
+      <dd>align-self: center;<span>/* align items to the middle of the container. */</span></dd>
+
+  </div>
+    
+</dl>
+        
+</div>
+     
+      </section>
+
+    </main>
+
+  </body>
+</html>
+
+ <!------Making a change to see if I can trigger a commit-->
+
