@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Julian Burnley">
+    <meta name="description" content="grid cheatsheet">
+    <meta name="keywords" content="grid, 'grid layout', 'grid lines', 'grid template'">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lato:wght@900&family=Space+Mono:ital,wght@1,700&display=swap');
+      </style>
+<title>Grid CheatSheet</title>
+<link href="/Lesson4Project/css/style.css" rel="stylesheet">
+</head>
+<div class="body">
+<body>
+<div class="header">
+        <header>
+
+                <h1>Lesson 4 Project</h1>
+                
+        
+        
+        
+            </header>
+
+        </div>
+
+        <div class="navigation">
+                <nav>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="grid-cheatsheet.html">Grid Cheatsheet</a></li>
+                      <li><a href="/Lesson4Practice/index.html">Practice Activities</a></li>
+                    </ul>
+                 </nav>
+                </div>
+    <div class="main">   
+<main>
+<h1>Terminology</h1>
+
+<dl class="terminology">
+        <dt>Grid Container</dt>
+        <dd>The grid container holds all the contents placed on the grid</dd>
+        <dt>Grid Item</dt>
+        <dd>The contents of the grid container are called the grid items.</dd>
+        <dt>Track</dt>
+        <dd>The track runs from one end of the container to the other.</dd>
+        <dt>Cell</dt>
+        <dd>The cell are squares or rectangles formed by the rows and columns.</dd>
+        <dt>Area</dt>
+        <dd>A rectangle or square of two or more grid cells.</dd>
+        <dt>Explicit Grid</dt>
+        <dd>The template columns, rows and area form the explicit grid.</dd>
+        <dt>Implicit Grid</dt>
+        <dd> Tracks automatically generated when the grid container adds grid lines.</dd>
+        <dt>Grid Template</dt>
+        <dd>The grid template defines the grid columns, rows and areas.</dd>
+        <dt>Gutters</dt>
+        <dd>The spaces between grid tracks are called Gutters.</dd>
+        <dt>Grid Naming</dt>
+        <dd>When grid lines are assigned names that define a grid area.</dd>
+</dl>
+
+
+<h1>Properties</h1>
+<dl class="properties">
+<div>
+        <dt>display</dt>
+        
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code">grid; /* generates a block-level grid */</dd>
+</div>
+
+<div>
+        <dt>display</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code">inline-grid; /* generates an inline-level grid */</dd>
+</div>
+<div>
+        <dt>grid-template-columns</dt>
+                <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+                <dd class="code">&lt;track-size&gt;; /* a length, percentage, or fraction of space in the grid, mesured in fr units */</dd>
+</div>
+<div>
+        <dt>grid-template-rows</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code">&lt;line-name&gt;; /* an arbitrary name of your choosing */</dd>
+</div>
+<div>
+
+        <dt>grid-template-areas</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code">&lt;grid-area-name&gt;; /* the name of a grid area specified */</dd>
+</div>
+<div>
+
+        <dt>grid-template</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code">&lt;grid-template-rows&gt;; /* sets grid-template-rows to the specified values */</dd>
+</div>
+<div>
+
+        <dt>grid-template</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;grid-template-columns&gt;; /* grid-template-rows to the specified values, respectively */</dd>
+</div>
+<div>
+        <dt>column-gap</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;line-size&gt;; /* a length value */</dd>
+</div>
+<div>
+
+        <dt>place-items</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;align-items&gt;; /* Aligns grid items along the block (column) axis */</dd>
+</div>
+<div>
+
+        <dt>place-content</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;align-content&gt;; /* This property aligns the grid along the block (column) axis */</dd>
+</div>
+<div>
+
+        <dt>grid-column-start</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> &lt;line&gt;; /* can be a number to refer to a numbered grid line */</dd>
+</div>
+<div>
+
+        <dt>grid-column</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> &lt;line&gt;; /* accepts all the same values as the longhand version */</dd>
+</div>
+<div>
+
+        <dt>grid-row</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> &lt;start-line&gt;; /* accepts all the same values as the longhand version */</dd>
+</div>
+<div>
+
+        <dt>grid-area</dt>
+        <dd>APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> &lt;name&gt;; /* a name of your choosing */</dd>
+</div>
+<div>
+
+        <dt>justify-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> start; /* aligns the grid item to be flush with the start edge of the cell */</dd>
+</div>
+<div>
+
+        <dt>align-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> end; /* aligns the grid item to be flush with the end edge of the cell */</dd>
+</div>
+<div>
+
+        <dt>align-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> center; /* aligns the grid item in the center of the cell */</dd>
+</div>
+<div>
+
+
+        <dt>align-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> stretch; /* fills the whole height of the cell (this is the default) */</dd>
+</div>
+<div>
+
+        <dt>place-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> auto; /* The “default” alignment for the layout mode */</dd>
+</div>
+<div>
+
+        <dt>place-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> &lt;align-self&gt;; /* The “default” alignment for the layout mode */</dd>
+</div>
+<div>
+
+        <dt>place-self</dt>
+        <dd class="heading">APPLIES TO ITEM ELEMENTS</dd>
+        <dd class="code"> &lt;justify-self&gt;; /* sets the second value justify-self */</dd>
+</div>
+<div>
+
+        <dt>row-gap</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;line-size&gt;; /* a length value */</dd>
+</div>
+<div>
+
+        <dt>grid-gap</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;grid-row-gap&gt;; /* a length value */</dd>
+</div>
+<div>
+
+        <dt>place-items</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;justify-items&gt;; /* aligns grid items along the inline (row) */</dd>
+</div>
+<div>
+
+        <dt>grid-auto-columns</dt>
+        <dd class="heading">APPLIES TO GRID CONTAINER ELEMENTS</dd>
+        <dd class="code"> &lt;track-size&gt;; /*  can be a length, a percentage, or a fraction of the free space in the grid (using the fr unit) */</dd>
+</div>
+        
+
+
+        
+</dl>
+
+
+</main> 
+
+</div> 
+<div class="footer">
+        <footer>
+                  <p>
+                        
+                    <span><strong>Name</strong>: Julian Burnley</span>
+                    <span><strong>GitHub ID</strong>: jlnburn</span>
+                    <span><strong>Date</strong>:02-24-2022</span>
+                  </p>
+              </footer>
+        </div>
+</body>
+</div>
+
+</html>

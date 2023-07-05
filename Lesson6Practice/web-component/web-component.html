@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS233DA | Lsn6 Practice Activities</title>
+  <link rel="stylesheet" href="/Lesson6Practice/css/main.css">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/Lesson6Practice/index.html">Home</a></li>
+        <li><a href="/Lesson6Practice/html-templates/table-templates.html">HTML Templates</a></li>
+        <li><a href="/Lesson6Practice/web-component/web-component.html">Web Component</a></li>
+        <li><a href="/Lesson6Project/index.html">Lesson 6 Project</a></li>
+      </ul>
+    </nav>
+    <h1>Lesson 6 Practice Activities</h1>
+    <div>
+      <p><span>Name:</span> Julian Burnley</p>
+      <p><span>MEID:</span> JUL2216252</p>
+      <p><span>GitHub Username:</span> JUL2216252</p>
+    </div>
+  </header>
+  <main>
+    <h2>Web Component Example</h2>
+
+    <div class="article-grid">
+
+        <article-card>
+        <span slot="img"><img src="/Lesson6Practice/images/Placeholder-blue.png" alt=""></span>
+         <span slot="title">Blue Story</span>
+            <span slot="author"> Jay Patrick</span>
+            <span slot="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate.</span>
+        </article-card>
+
+
+        <article-card>
+          <span slot="img"><img src="/Lesson6Practice/images/Placeholder-green.png" alt=""></span>
+        <span slot="title">Green Story</span>
+        <span slot="author"> Mary Fisher</span>
+        <span slot="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate. </span>
+
+    </article-card>
+
+
+    <article-card>
+      <img src="/Lesson6Practice/images/Placeholder-magenta.png" alt="">
+        <span slot="title">Magenta Story</span>
+        <span slot="author"> Jenny Paul</span>
+        <span slot="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate. </span>
+    </article-card>
+
+    <article-card>
+        <img src="/Lesson6Practice/images/Placeholder-blue.png" alt="">
+        <span slot="title">Navy Story</span>
+        <span slot="author"> Mack Tree</span>
+        <span slot="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate. </span>
+    </article-card>
+
+
+    <article-card>
+        <img src="/Lesson6Practice/images/Placeholder-green.png" alt="">
+        <span slot="title">Lime Story</span>
+        <span slot="author"> Jane Buck</span>
+        <span slot="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate. </span>
+    </article-card>
+
+    <article-card>
+        <img src="/Lesson6Practice/images/Placeholder-magenta.png" alt="">
+        <span slot="title">Red Story</span>
+        <span slot="author"> Tony Toni</span>
+        <span slot="snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate. </span>
+    </article-card>
+
+</div>
+
+   
+  </main>
+  <div>
+  <template id="article-card-template">
+    <link rel="stylesheet" href="/Lesson6Practice/css/main.css">
+
+      <div class="article-card">
+
+          <h3 class="article-title"><slot name ="title"></slot></h3>
+          <p class="article-author">Author:<slot name = "author"></slot></p>
+          <p class="article-snippet"><slot name = "snippet"></slot>Snippet</p>
+          <button type ="button" class ="read-more">Read More</button>
+
+      </div>
+
+          </template>
+      </div>
+  
+      <script src="scripts/create-component.js"></script>
+</body>
+</html>

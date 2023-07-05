@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Update the metadata with your information -->
+  <title>Add Title</title> 
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="Add Lesson 4 practice">
+  <meta name="keywords" content="grid, cells, area">
+  <link href="/Lesson4Practice/css/main.css" rel="stylesheet">
+  
+</head>
+<div class="body">
+<body>
+  <div class="header">
+  <header>
+    <div id="skip"><a href="maincontent">skip to main content</a></div>
+    <h1>Lesson 4 Practice Activities</h1>
+  </header>
+</div>
+
+<div id="left">
+  <section class="column left">
+    <h2>Site Nav</h2>
+    <nav>
+      <ul>
+        <li><a href="/Lesson4Practice/index.html" class="active">Home</a></li>
+        <li><a href="/Lesson4Practice/grid-images/mondrian-painting.html">Painting</a></li>
+        <li><a href="/Lesson4Practice/grid-fallback/column-fallback.html">Fallback</a></li>
+        <li><a href="/Lesson4Practice/grid-accessibility/form-layout.html">Form Layout</a></li>
+        <li><a href="/Lesson4Project/index.html">Lessn 4 Projects</a></li>
+      </ul>
+    </nav>
+  </section>
+</div>
+
+<div class="main">
+  <main id="maincontent">
+
+    <div class="painting">
+      <h2>HTML - Mondrian Painting</h2>
+      <p> &lt;ul class=&quot;image-grid&quot;&gt;<br>
+      
+      &lt;li class=&quot;item1&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/01.jpg&quot; alt=&quot;image one&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item2&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/02.jpg&quot; alt=&quot;image two&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item3&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/03.jpg&quot; alt=&quot;image three&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item4&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/04.jpg&quot; alt=&quot;image four&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item5&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/05.jpg&quot; alt=&quot;image five&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item6&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/06.jpg&quot; alt=&quot;image six&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item7&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/07.jpg&quot; alt=&quot;image seven&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item8&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/08.jpg&quot; alt=&quot;image eight&quot;&gt;&lt;/li&gt;<br>
+
+
+      &lt;li class=&quot;item9&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/09.jpg&quot; alt=&quot;image nine&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item10&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/10.jpg&quot; alt=&quot;image ten&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item11&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/11.jpg&quot; alt=&quot;image eleven&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item12&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/12.jpg&quot; alt=&quot;image twelve&quot;&gt;&lt;/li&gt;<br>
+
+
+      &lt;li class=&quot;item13&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/13.jpg&quot; alt=&quot;image thirteen&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item14&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/14.jpg&quot; alt=&quot;fourteen&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item15&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/15.jpg&quot; alt=&quot;image fifteen&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item16&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/16.jpg&quot; alt=&quot;image sixteen&quot;&gt;&lt;/li&gt;<br>
+
+      &lt;li class=&quot;item17&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/17.jpg&quot; alt=&quot;image seventeen&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item18&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/18.jpg&quot; alt=&quot;image eighteen&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item19&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/19.jpg&quot; alt=&quot;image nineteen&quot;&gt;&lt;/li&gt;<br>
+      &lt;li class=&quot;item20&quot;&gt;&lt;img src=&quot;/Lesson4Practice/images/20.jpg&quot; alt=&quot;image twenty&quot;&gt;&lt;/li&gt;<br>
+    &lt;/ul&gt;</p>
+
+      <h2>CSS - Mondrian Painting</h2>
+      <p>
+      
+
+.image-grid {<br>
+  display: grid;<br>
+  grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;<br>
+  grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;<br>
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);<br>
+}<br>
+
+.image-grid li {<br>
+  list-style: none;<br>
+}<br>
+
+img {<br>
+height: 100%;<br>
+width: 100%;<br>
+border-radius: 6px;<br>
+border-style: solid;<br>
+border-color: black;<br>
+object-fit: cover;<br>
+}li<br> {<br>
+  height: 100%;<br>
+  background-size: cover;<br>
+}<br>
+li:nth-child(1) {<br>
+  grid-column: span 2;<br>
+  border-top: none;<br>
+  border-left: none;<br>
+}<br>
+li:nth-child(2) {<br>
+  grid-column: span 3;<br>
+  border-top: none;<br>
+}<br>
+li:nth-child(3) {<br>
+  grid-column: span 2;<br>
+  border-top: none;<br>
+}<br>
+</p>
+    </div>
+
+    <div class="fallback">
+      <h2>HTML - Column Fallback</h2>
+
+      <p>
+ 
+        &lt;div class=&quot;main&quot;&gt;<br>
+          &lt;main id=&quot;maincontent&quot;&gt;<br>
+        
+            &lt;h1&gt;List of Practice Activities&lt;/h1&gt;<br>
+            &lt;dl id=&quot;practice&quot;&gt;<br>
+              &lt;dt&gt;Grid Layout&lt;/dt&gt;<br>
+              &lt;dd&gt;3 Column Page Layout&lt;/dd&gt;<br>
+              &lt;dt&gt;Grid Images&lt;/dt&gt;<br>
+              &lt;dd&gt;Modrian Painting&lt;/dd&gt;<br>
+              &lt;dt&gt;Grid Fallback&lt;/dt&gt;<br>
+              &lt;dd&gt;Float Page Layout&lt;/dd&gt;<br>
+              &lt;dt&gt;Grid Accessibility&lt;/dt&gt;<br>
+              &lt;dd&gt;Form Layout&lt;/dd&gt;<br>
+            &lt;/dl&gt;<br>
+           
+          &lt;/main&gt;<br>
+        &lt;/div&gt;<br>
+        
+        &lt;div id=&quot;aside&quot;&gt;<br>
+          &lt;aside class=&quot;column right&quot;&gt;<br>
+            &lt;h2&gt;Activity Info&lt;/h2&gt;<br>
+           <br>
+          &lt;/aside&gt;<br>
+        &lt;/div&gt;<br>
+      </p>
+      <br>
+
+      <h2>CSS - Column Fallback</h2>
+
+      <p>/*`float layout styles`*/<br>
+
+        h1, h2, h3 {<br>
+          font-family: 'Gelasio', 'Times New Roman', serif;<br>
+        }<br>
+        
+        
+        body {<br>
+          height: 100vh;<br>
+          font-family: 'Ubuntu', 'Arial', sans-serif;<br>
+          background-color: var(--light-color);<br>
+          color: var(--dark-color);  <br> 
+        }<br>
+        
+        
+        header {<br>
+          width: 100vw;<br>
+          height: 4em;<br>
+          position: relative;<br>
+          text-align: center;<br>
+          background-color: var(--dark-color);<br>
+          color: var(--light-color);<br>
+          box-shadow: 0px 5px 5px 0px var(--shadow-color);<br>
+          padding-top: .25em;<br>
+          z-index: 3;<br>
+        }<br>
+        
+        .left.column {<br>
+            float: left;<br>
+            height: calc(100vh - 10em);<br>
+            margin-top: .5em;<br>
+            box-shadow: 3px 0px 4px 0px var(--shadow-color);<br>
+            padding: .5em;<br>
+          }<br>
+          main {<br>
+            float: left;<br>
+            width: calc(100vw-25em);<br>
+            padding: 1em;<br>
+          }<br>
+          
+          </p>
+    </div>
+
+    <div class="layout">
+      <h2>HTML - Form Layout</h2>
+      <p>   &lt;fieldset&gt;<br>
+        &lt;legend&gt;Shipping Details&lt;/legend&gt;<br>
+        &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; name=&quot;fullname&quot; id=&quot;name&quot; required&gt;<br>
+        &lt;label for=&quot;address1&quot; class=&quot;group-right&quot;&gt;Street Address&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; name=&quot;address1&quot; id=&quot;address1&quot; required class=&quot;group-right&quot;&gt;<br>
+        &lt;label for=&quot;address2&quot; class=&quot;group-right&quot;&gt;Address 2&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; name=&quot;address2&quot; id=&quot;address2&quot; class=&quot;group-right&quot;&gt;<br>
+        &lt;label for=&quot;city&quot; class=&quot;group-right&quot;&gt;City&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; name=&quot;city&quot; id=&quot;city&quot; required class=&quot;group-right&quot;&gt;<br>
+        &lt;label for=&quot;state&quot; class=&quot;state&quot;&gt;State&lt;/label&gt;<br>
+        &lt;input list=&quot;state-list&quot; id=&quot;state&quot; name=&quot;state&quot; required class=&quot;state&quot;&gt;<br>
+        &lt;label for=&quot;zip&quot; class=&quot;group-right&quot;&gt;Zip Code&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; name=&quot;zip&quot; id=&quot;zip&quot; required pattern=&quot;^(?(^00000(|-0000))|(\d{5}(|-\d<br>{4})))$&quot; class=&quot;group-right&quot;&gt;<br>
+        &lt;label for=&quot;phone&quot; class=&quot;phone&quot;&gt;Phone Number&lt;/label&gt;<br>
+        &lt;input type=&quot;tel&quot; name=&quot;phone&quot; id=&quot;phone&quot; required class=&quot;phone&quot;&gt;<br>
+        &lt;label for=&quot;email&quot; class=&quot;email&quot;&gt;Email Address&lt;/label&gt;<br>
+        &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; required class=&quot;email&quot;&gt;<br>
+        &lt;/fieldset&gt;<br>
+        &lt;legend&gt;Payment Details&lt;/legend&gt;<br>
+       <br>
+       </p>
+
+      <h2>CSS - Form Layout</h2>
+      <p>
+        /* Form styles */<br>
+fieldset {<br>
+  display: grid;<br>
+  grid-template-columns: repeat(2, 20ch 1fr);<br>
+  grid-auto-rows: max-content;<br>
+  gap: .5em;<br>
+  padding: 1em;<br>
+  border-radius: .5em;<br>
+  border-style: solid;<br>
+  border-width: 1px 6px;<br>
+  border-color: var(--main-color-800);<br>
+  box-shadow: 2px 2px 5px var(--shadow-color-600);<br>
+  background-color: whitesmoke;<br>
+  margin: 1em;<br>
+}<br>
+legend {<br>
+  margin-left: .5em;<br>
+  padding: 0 .5em;<br>
+  font-weight: 700;<br>
+  border-left: 3px solid var(--main-color-800);<br>
+  border-radius: .5em;<br>
+  background-color: var(--main-color-200);<br>
+}label, input {<br>
+  margin: .5em 0;<br>
+}<br>
+label {<br>
+  justify-self: end;<br>
+  font-weight: bolder;<br>
+  grid-column: 1;<br>
+}<br>
+input {<br>
+  grid-column: 2;<br>
+}<br>
+
+
+        
+      </p>
+    </div>
+
+
+
+   
+  </main>
+</div>
+
+<div class="aside" id="aside">
+  <aside class="column right">
+    <h2>Activity Info</h2>
+    <p>To help build your skillsets and proficiency with the concepts learned in this lesson, complete the following activities. These activities are ungraded, however, they will provide opportunities to explore different scenarios you may come across as you work on projects within the course and your career. The activities will also help prepare you for what you will need to do for the lesson's project assignment and final exam project at the end of the course.</p>
+
+    <h3>List of Practice Activities</h3>
+    <dl id="practice">
+      <dt>Grid Layout</dt>
+      <dd>3 Column Page Layout</dd>
+      <dt>Grid Images</dt>
+      <dd>Modrian Painting</dd>
+      <dt>Grid Fallback</dt>
+      <dd>Float Page Layout</dd>
+      <dt>Grid Accessibility</dt>
+      <dd>Form Layout</dd>
+    </dl>
+  </aside>
+</div>
+
+
+  <footer class="foot">
+
+    <div class="student-card">
+      <p>Student Info</p>
+      <ul>
+        <li>Name: Julian Burnley</li>
+        <li>MEID: Your MEID</li>
+        <li>GitHub Username: jlnburn</li>
+      </ul>
+    </div>
+    <div class="student-card">
+      <p>Course Info</p>
+      <ul>
+        <li>Course: CIS233DA</li>
+        <li>Section: Enter 5-digit section number</li>
+        <li>Instructor: Enter your instructor's name</li>
+      </ul>
+    </div>
+
+  </footer>
+
+</body>
+</div>
+</html>

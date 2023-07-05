@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Julian Burnley">
+            <meta name="description" content="media query">
+            <meta name="keywords" content=" media query, feature query, import, and font face CSS at-rules">
+        
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=IBM+Plex+Sans+Arabic:wght@100&family=Open+Sans:wght@300&family=PT+Sans&family=Red+Hat+Mono:wght@300&family=Roboto+Mono:wght@100&display=swap');
+                </style>
+        <title>Grid CheatSheet</title>
+        <link href="/Lesson6Project/css/main.css" rel="stylesheet">
+        </head>
+        
+        <body id="media">
+        <main>
+            <div class="grid">
+
+                <header>
+            
+                    <h1>Lesson 6 Project</h1>
+                    
+            <div class="navigation">
+                    <nav>
+                        <ul>
+                          <li><a href="/Lesson6Project/index.html">Home</a></li>
+                          <li><a href="/Lesson6Project/html-tags-and-attributes.html">Html Tags And Attributes</a></li>
+                          <li><a href="/Lesson6Project/css-user-interface.html">Css User Interface</a></li>
+                          <li><a href="/Lesson6Project/css-box-model.html">Css Box Model</a></li>
+                          <li><a href="/Lesson6Project/media-query.html">Media Feature Query</a></li>
+                          <li><a href="/Lesson6Project/info.html">Info</a></li>
+                          <li><a href="/Lesson6Practice/index.html">Lesson 6 Practice Activities</a></li>
+                          
+                        </ul>
+                     </nav>
+                    </div> 
+   </header>
+
+   <h2>@ Rules</h2>
+
+      <h3 id="media-query">Media Query</h3>
+      <div class="media-query">
+          <p>@media:</p>
+          <hr class="solid">
+          <p>The @media rule makes it possible to define style rules for different media types.</p>
+          <p>all:  /*Used for all media type devices.*/</p>
+          <p>print:  /*Used for printers.*/</p> 
+          <p>screen:  /*Used for computer screens, tablets, smart-phones etc.*/</p> 
+          <p>speech:  /*Used for a screenreader that "reads" the page out loud.*/</p> 
+        
+      </div>
+
+  
+      <h3 id="feature-query">Feature Query</h3>
+      <div class="feature-query">
+          <p> @supports:</p>
+          <hr class="solid">
+          <p>Feature queries can be used to test if a browser is able to understand a CSS feature or not.</p>
+          <p>@supports (property: value):  /*Checks if a property is supported.*/</p>
+          <p>@supports not (property: value) :  /*Checks if a property is not supported*/</p> 
+          <p>@supports (property1: value) and (property2: value):  /*More than one property.*/</p> 
+          <p>@supports (property1: value) or (property2: value):  /*Supports one property or the other.*/</p> 
+        </div>
+
+
+    <h3 id="import">Import</h3>
+    <div class="import">
+      <p>@import:</p>
+      <hr class="solid">
+      <p>The @import rule allows you to import a style sheet into another style sheet.</p>
+      <p>url|string:  /*A url or a string representing the location of the resource to import.*/</p> 
+      <p>list-of-mediaqueries: /*A comma-separated list of media queries conditioning the application of the CSS rules defined in the linked URL*/</p>
+      <p>@import url|string list-of-mediaqueries;</p>
+   </div>
+
+   <h3 id="font-face">Font-face</h3>
+   <div class="font-face">
+     <p>@font-face:</p>
+     <hr class="solid">
+     <p>The @font-face rule allows custom fonts to be loaded on a webpage.</p>
+     <p>font-family:  /*Required. Defines the name of the font.*/</p> 
+     <p>font-stretch: /*Optional. Defines how the font should be stretched. Default value is "normal".*/</p>
+     <p>font-style: /*Optional. Defines how the font should be styled. Default value is "normal".*/</p>
+     <p>font-weight: /*Optional. Defines the boldness of the font. Default value is "normal".*/</p>
+    </div>
+    
+    
+  </div>
+</main>
+  <div id="footer">
+  
+      <footer class="cssfooter">
+         <p>
+              <span><strong>Name</strong>: Julian Burnley</span></p>
+      
+              <p><span><strong>Github</strong>: JUL2216252</span></p> <p><span><strong>Date</strong>: April 16, 2022</span></p>
+      
+            </footer>
+      
+        </div>
+     
+  </body>
+</html>

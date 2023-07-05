@@ -59,7 +59,7 @@ body {
   border-right: thick solid var(--medium-color-border-link-left);
   box-shadow: 10px 0 20px -5px var(--left-background-shadow-body-color);
   padding: .65em;
-  text-align: center;
+  text-align: left;
 }
 
 .left-column h1 {
@@ -77,7 +77,7 @@ body {
 .left-column nav a:hover, a:active {
  background-color: var(--medium-color-border-link-left);
  color: var(--left-background-shadow-body-color);
- text-align: center;
+ text-align: left;
   text-decoration: none;
 }
 

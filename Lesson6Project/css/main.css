@@ -1,0 +1,462 @@
+/*
+Name : Julian Burnley
+Course: CIS233DA
+Section: 12988 
+Instructor : Brian Thurber
+*/
+
+/* Browser reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+   /* Color scheme*/
+
+  :root {
+--background-color-header: #29417e;
+--background-color-body-1:#f19b9e;
+--background-color-body-2:hsl(198, 100%, 80%);
+--background-color-body-3:#c6d699;
+--background-color-body-4:#e6ffe6;
+--background-color-body-5:#dce3de;
+--background-color-box-1:#ccccff;
+--background-color-box-2:rgb(108, 198, 108);
+--text-color-heading: white;
+--text-color-cheat:#a40109;
+--text-color-box:black;
+--text-color-media:black;
+--text-color-body: #f3ebeb;
+--text-color-body-1:#afafaf;
+--text-color-box:#482808;
+--text-color-media:black;
+--shadow-color-light: hsl(0,100%,25%,0.2);
+--border-color-dark: hsl(0,100%,25%);
+--background-color-card1:rgb(166, 166, 166);
+ }
+
+
+
+
+  #cheat {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr  2.5fr auto 2.5fr;   
+  overflow: hidden auto;
+  background-color: var(--background-color-body-1);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+  padding-left: 0.125em;
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+} 
+
+#box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr  2.5fr auto 2.5fr;   
+  overflow: hidden auto;
+  background-color: var(--background-color-body-2);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+  padding-left: 0.125em;
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+} 
+
+#user{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr  2.5fr auto 2.5fr;   
+  overflow: hidden auto;
+  background-color: var(--background-color-body-3);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+  padding-left: 0.125em;
+  height: 180vh;
+  margin: 0;
+  padding: 0;
+} 
+
+#media {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr  2.5fr auto 2.5fr;   
+  overflow: hidden auto;
+  background-color: var(--background-color-body-4);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+  padding-left: 0.125em;
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+} 
+
+
+.css {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr  2.5fr auto 2.5fr;   
+  overflow: hidden auto;
+  background-color: var(--background-color-body-4);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+  padding-left: 0.125em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.media {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr  2.5fr auto 2.5fr;   
+  overflow: hidden auto;
+  background-color: var(--background-color-body-1);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif, 'Roboto Slab', serif;
+  padding-left: 0.125em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  display: grid;
+  grid-area:  1 / 2 ;
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.hcc {
+  display: grid;
+  grid-area:  1 / 2 ;
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  text-align: center;
+  font-weight: bolder;
+}
+
+#H2, h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--border-color-dark);
+}
+
+.H2-1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--border-color-dark);
+}
+
+
+h3 {
+  font-family: 'Roboto Slab', 'sans-serif';
+  font-weight: bold;
+  color: var(--border-color-dark);
+  
+}
+
+.H3-1 {
+  font-family: 'Roboto Slab', 'sans-serif';
+  font-weight: bold;
+  color: var(--border-color-dark);
+}
+
+a {
+color: var(--text-color-heading);
+  letter-spacing: 2px; 
+  text-decoration: none; 
+  padding: 18px 5px;
+  display: inline-block;
+  width: 100%; 
+  
+
+}
+
+a:hover {
+  background-color: var(--text-color-heading);
+  color: var(--background-color-header);
+  padding: 5px;
+  
+  }
+  
+
+.navigation dl { 
+  list-style: none; 
+  margin-bottom: 0; 
+  padding: 1px; 
+  display: flex; 
+  }
+
+     
+li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: large;
+  padding: 10px;
+
+}
+
+
+
+
+
+footer {
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  display: inline-flex;
+  justify-content: space-evenly;
+  height: 70vh;
+  padding: 2.5em;
+  width: 100%;
+ 
+  
+}
+
+
+
+p:first-child {
+  font-weight:  bold; text-align: center;
+  border-bottom: 0.1875em solid;
+  border-bottom-width: thin;
+  border-color: var(--background-color-header) ;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+}
+
+
+
+.card {
+  padding: 0.6em;
+  width: 18.75em;
+  height: 7.8125em;
+  border: 0.1875em solid var(--border-color-dark);
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+margin-bottom: 1.25em;
+background-color: var(--background-color-card1);
+border-radius: 20px 6px;
+ text-align: center; 
+ box-shadow: var(--shadow-color-light) 10px 10px 5px;
+}
+
+
+.card1 {
+  padding: 0.6em;
+  width: 18.75em;
+  height: 7.8125em;
+  border: 0.1875em solid var(--border-color-dark);
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+margin-bottom: 1.25em;
+background-color: var(--background-color-card1);
+border-radius: 20px 6px;
+ text-align: center; 
+ box-shadow: var(--shadow-color-light) 10px 10px 5px;
+}
+
+
+.ST, .PES, .PCS, .CS, .AS, .AT, .AU  {
+  padding: 5px;
+  text-align: center;
+  float: left; 
+  font-family: monospace, 'Times New Roman', Times, serif;
+  color: var(--text-color-cheat);
+  display: block;
+  padding: 0.1875em;
+
+}
+
+
+.ST1, .PES1, .PCS1, .CS1, .AS1, .AT1, .AU1  {
+  padding: 5px;
+  text-align: center;
+  float: left; 
+  font-family: monospace, 'Times New Roman', Times, serif;
+  color: var(--text-color-cheat);
+  display: block;
+  padding: 0.1875em;
+
+}
+
+
+
+#f1, #f2 {
+  display: inline-block;
+  color: var(--text-color-heading);
+}
+
+
+footer #footer {
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-top: 2em;
+  height: 1vh;
+  padding: 2.5em;
+  width: 100%;
+ 
+  
+}
+
+
+.cssfooter, #footer {
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  display: inline-flex;
+  justify-content: space-evenly;
+  height: 1vh;
+  padding: 2.5em;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+ 
+}
+
+
+label  {
+    display: block;
+  padding: .5em;
+  color:var(--background-color-header);
+  font-weight: bold; 
+}
+
+input, label {
+  margin-left: 20px;
+  margin-bottom: 25px;
+  padding: .5em;
+}
+
+textarea {
+  margin-left: 20px;
+  margin-bottom: 25px;
+  padding: 3em;
+}
+
+.contactinfo {
+  margin-left: 20px; 
+}
+.cinfo {
+  margin-top: 30px;
+}
+
+.cinfo, .minfo {
+  text-align: left;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+
+button {
+ 
+  padding: 5px 10px;
+ margin-left: -325px;
+ margin-bottom: 220px;
+}
+
+
+button:hover {
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  font-weight: bold;
+}
+
+#resetmessage {
+  visibility: hidden;
+  background-color: var(--text-color-heading);
+  color: var(--background-color-header);
+  height: 30px;
+  width:210px;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.form {
+  background-color: var(--background-color-body-5);
+  
+}
+
+
+
+.cheat {
+  background-color: var(--background-color-body-1);
+}
+
+
+
+.positioning, .box-sizing, .margin, .border, .padding {
+  width: 40vw;
+  border: 2px solid  var(--border-color-dark-1);
+  margin: 4em auto;
+  margin-top: 10px;
+  padding: .5em;
+  background-color: var(--background-color-box-1);
+  color: var(--text-color-box);
+  border-radius: 20px 6px;
+ text-align: left; 
+ box-shadow: var(--shadow-color-light) 10px 10px 5px;
+ font-weight:  bold; text-align: center;
+ border-bottom: 0.1875em solid;
+ border-bottom-width: thin var(--border-color-dark-1);
+ padding-bottom: 4px;
+
+} 
+
+.media-query, .feature-query, .import, .font-face {
+  width: 40vw;
+  border: 2px solid  var(--border-color-dark-1);
+  margin: 4em auto;
+  margin-top: 10px;
+  padding: .5em;
+  background-color: var(--background-color-box-2);
+  color: var(--text-color-media);
+  border-radius: 0 0 15px 15px;
+text-align: center;
+ box-shadow: var(--shadow-color-light) 10px 10px 5px;
+ font-weight:  bold; text-align: center;
+ border-bottom: 0.1875em solid;
+ border-bottom-width: thin var(--border-color-dark-1);
+ padding-bottom: 4px;
+
+} 
+
+
+#positioning, #box-sizing {
+  border-bottom: var(--border-color-dark-1);
+  
+}
+
+hr.solid {
+  border-top: 2px solid var(--border-color-dark-1);
+}
+
+
+h3 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
