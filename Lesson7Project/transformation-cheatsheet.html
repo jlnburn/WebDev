@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Reflections">
+    <meta name="keywords" content="Transforms,Transitions,Cheatsheet, Animations, keyframes,Easing,Rotation, Scale, Skew, Delay, 'Transition Timing'">
+    <link rel="stylesheet" href="css/lsn7-styles.css">
+    <title>Transformation Cheatsheet</title>
+</head>
+<body>
+    <section id="left-side">
+      <header>
+        <h1>Lesson 7 Project</h1>
+        <nav>
+          <ul class="main">
+            <li><a href="/Lesson7Project/index.html">Home</a>
+                <ul class=" sub1">
+                  <li><a href="/Lesson7Project/index.html#reflection">My Reflections</a></li>
+                  <li><a href="/Lesson7Project/index.html#nsteps">My Next Steps</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./transformation-cheatsheet.html">Cheatsheet</a>
+              <ul class="sub2">
+                <li><a href="/Lesson7Project/transformation-cheatsheet.html#t">Terminology</a></li>
+                <li><a href="/Lesson7Project/transformation-cheatsheet.html#tp">Transform Properties</a></li>
+                <li><a href="/Lesson7Project/transformation-cheatsheet.html#tp5">Transition Properties</a></li>
+                <li><a href="/Lesson7Project/transformation-cheatsheet.html#tp9">Animation Properties</a></li>
+              </ul>
+            </li>
+
+            <li class="practice"><a href="/Lesson7Practice/index.html">Lesson 7 Practice Activities</a></li>
+          </ul>
+        </nav>
+
+        <div id="student-info">
+          <p><span>Name:</span>Julian Burnley</p>
+          <p><span>GitHub ID:</span> JUL2216252</p>
+        </div>
+        </header>
+      </section>
+    <main>
+     
+<div class="wrapper">
+  
+  <section class="cards">
+    <div class="cards-content">
+      <h2 id="t">Terminology</h2>     
+<div id="list">
+  
+  
+      <dl>
+        <dt>Animations</dt>
+       <dd>Animations let us decide if and how an animation repeats, give us granular control over what happens throughout the animation, and more.</dd>
+       <dt>Keyframes</dt>
+       <dd>Keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for waypoints along the animation sequence.</dd>
+       <dt>Transforms</dt>
+       <dd>Transforms let us rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.</dd>
+       <dt>Transitions</dt>
+       <dd>Transitions allow us to animate CSS properties from an original value to a new value over time when a property value changes. </dd>
+       <dt>Easing</dt>
+       <dd> Easing accounts for the rate at which a transition occurs.</dd>
+       <dt>Rotation</dt>
+       <dd>A rotation function causes an element to be rotated around an axis, or around an arbitrary vector in 3D space.</dd>
+       <dt>Scale</dt>
+       <dd>The scale function defines a transformation that resizes an element on the 2D plane.</dd>
+       <dt>Skew</dt>
+       <dd>The skew function defines a transformation that skews an element on the 2D plane.</dd>
+       <dt>Delay</dt>
+       <dd>The transition-delay  property specifies the duration to wait before starting a property's transition effect when its value changes.</dd>
+       <dt>Transition Timing</dt>
+       <dd>The transition-timing-function property sets how intermediate values are calculated for CSS properties being affected by a transition.</dd>
+      </dl>
+    </div>
+    </div>
+ 
+  
+  
+    
+    <div class="cards-content">
+      <h2 id="tp">Transform Properties</h2> 
+      <div id="properties">
+  
+      <div class="transformP">
+       
+<div class="example-code-card">
+      <div class="tr20">
+        <h3 class="tabhead">transform: rotate(20deg)</h3>
+      </div>
+        <p class="definition">The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.</p>
+        <div class="diva">
+
+          <p>div.a {<br>
+            width: 400px;<br>
+            height: 200px;<br>
+            transform: rotate(20deg);<br>
+            box-shadow: 0 0 5px 5px var(--main-color-200);<br>
+            background-color: var(--main-color-200);<br>
+            color: var(--main-color-600);<br>
+            border: dashed 1px var(--main-color-600);<br>
+          }
+         </p>
+         </div>
+      
+         
+      </div>
+      </div>
+    </div>
+    </div> 
+    <div class="cards-content">
+      <h2 id="tp1">Transform Properties</h2> 
+            <div id="properties1">
+        
+      <div class="transformP">
+       
+<div class="example-code-card1">
+      <div class="tr20">
+        <h3 class="tabhead">transform: skewY(20deg)</h3>
+      </div>
+        <p class="definition">The skewY() method skews an element along the Y-axis by the given angle.</p>
+        <div class="divb">
+
+          <p>div.b {<br>
+            width: 300px;<br>
+            height: 160px;<br>
+            transform: skewY(20deg);<br>
+            box-shadow: 0 0 5px 5px var(--main-color-200);<br>
+            background-color: var(--main-color-200);<br>
+            color: var(--main-color-600);<br>
+            border: dashed 1px var(--main-color-600);<br>
+          }
+         </p>
+         </div>
+      
+         
+      </div>
+      </div>
+    </div>
+    </div>    
+    <div class="cards-content">
+      <h2 id="tp2">Transform Properties</h2> 
+      <div id="properties2">
+  
+      <div class="transformP">
+       
+<div class="example-code-card2">
+      <div class="tr20">
+        <h3 class="tabhead">transform:scaleY(1.1)</h3>
+      </div>
+        <p class="definition">The scaleY() method increases or decreases the height of an element.</p>
+        <div class="divc">
+
+          <p>.divc {<br>
+            width: 300px;<br>
+            height: 130px;<br>
+            transform:scaleY(1.3);<br>
+            color: var(--main-color-600);<br>
+            background-color: var(--main-color-200);<br>
+            border: dashed 1px var(--main-color-600); <br>
+            box-shadow: 0 0 5px 5px var(--main-color-200);<br>
+          }
+         </p>
+         </div>
+      
+         
+      </div>
+      </div>
+    </div>
+    </div>    
+    <div class="cards-content">
+      <h2 id="tp3">Transform Properties</h2> 
+      <div id="properties3">
+  
+      <div class="transformP">
+       
+<div class="example-code-card3">
+      <div class="tr20">
+        <h3 class="tabhead">transform: translate(30px,20px)</h3>
+      </div>
+        <p class="definition">The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</p>
+        <div class="divd">
+
+          <p>.divd {<br>
+            width: 300px;<br>
+            height: 130px;<br>
+            color: var(--main-color-600);<br>
+            transform: translate(30px,20px);<br>
+            background-color: var(--main-color-200);<br>
+            border: dashed 1px var(--main-color-600); <br>
+            box-shadow: 0 0 5px 5px var(--main-color-200);<br>
+          }
+         </p>
+         </div>
+      
+         
+      </div>
+      </div>
+    </div>
+    </div> 
+    <div class="cards-content">
+      <h2 id="tp4">Transform Properties</h2> 
+      <div id="properties4">
+  
+      <div class="transformP">
+       
+<div class="example-code-card4">
+      <div class="tr20">
+        <h3 class="tabhead">transform: matrix(1, 0.7, 0, 1, 0, 0)</h3>
+      </div>
+        <p class="definition">The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.</p>
+        <div class="dive">
+
+          <p>.dive {<br>
+            width: 300px;<br>
+            height: 130px;<br>
+            color: var(--main-color-600);<br>
+            transform: matrix(1, 0.7, 0, 1, 0, 0);<br>
+            background-color: var(--main-color-200);<br>
+            border: dashed 1px var(--main-color-600); <br>
+            box-shadow: 0 0 5px 5px var(--main-color-200);<br>
+          }
+         </p>
+         </div>
+      
+         
+      </div>
+      </div>
+    </div>
+    </div>
+    
+  
+    
+    <div class="cards-content">
+      <h2 id="tp5">Transition Properties</h2> 
+      <div class="example-code-cardtrans">
+          <div class="tr201">
+          <h3 class="tabhead">transition-delay: 1s</h3>
+          </div>
+          <p class="definition1">The transition-delay property specifies a delay (in seconds) for the transition effect.<br> Hover below for TRANSITION!</p>
+      
+      <div class="diva4">
+      
+        <p>.diva4 {<br>
+          width: 300px;<br>
+          height: 225px;<br>
+          transition: height 3s;<br>
+         transition-delay: 1s;<br>
+        }
+        <p id="d4">.diva4:hover {<br>
+            height: 600px;<br>
+            font-weight: bold;<br>
+            color: var(--main-color-600);<br>
+            background-color: var(--accent-color-400);<br>
+        } </p>
+
+         
+          
+        </p>
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp6">Transition Properties</h2> 
+      <div class="example-code-cardtrans1">
+          <div class="tr201">
+          <h3 class="tabhead">transition-duration: 5s</h3>
+          </div>
+          <p class="definition1">The transition-duration property specifies the time in (s) or (ms) a transition effect takes to complete.<br> Hover below for TRANSITION!</p>
+      
+      <div class="diva1">
+      
+        <p>.diva1 {<br>
+          width: 300px;<br>
+          height: 210px;<br>
+          transition-duration: 5s;<br>
+          transition-property: width;<br>
+          }
+          <p id="d1">.diva1:hover {<br>
+          width: 400px;<br>
+          font-weight: bold;<br>
+          color: var(--main-color-600);<br>
+          background-color: var(--accent-color-400);<br>
+          
+          }
+        </p>
+
+        </p>
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp7">Transition Properties</h2> 
+      <div class="example-code-cardtrans2">
+          <div class="tr201">
+          <h3 class="tabhead">transition-property: height</h3>
+          </div>
+          <p class="definition1">The transition-property property specifies the name of the CSS property the transition effect is for.<br> Hover below for TRANSITION!</p>
+      
+      <div class="diva3">
+      
+        <p>.diva3 {<br>
+          width: 300px;<br>
+          height: 220px;<br>
+          transition-duration: 5s;<br>
+          transition-property: height;<br>
+          }
+          </p>
+          <p id="d3">.diva3:hover {<br>
+            height: 400px;<br>
+          background-color: var(--accent-color-400);<br>
+          font-weight: bold;<br>
+          }
+        </p>
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp8">Transition Properties</h2> 
+      <div class="example-code-cardtrans2">
+          <div class="tr201">
+            <h3 class="tabhead">transition-timing-function: linear</h3>
+          </div>
+          <p class="definition1">The transition-timing-function property specifies the speed curve of the transition effect.<br> Hover below for TRANSITION!</p>
+      
+      <div class="diva2">
+
+        <p>.diva2 {<br>
+          width: 300px;<br>
+          height: 220px;<br>
+          transition: width 2s;<br>
+          transition-timing-function: linear;<br>
+        }
+      </p>
+          <p id="d2">div.a1:hover {<br>
+          width: 300px;<br>
+          height: 300px;<br>
+          transition: width 3s;<br>
+          transition-delay: 3s;<br>
+          }
+        </p>
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp9" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">@keyframes colors</h3>
+          </div>
+          <p class="definition2">When CSS style is specified inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</p>
+      
+      <div class="divaa1">
+
+        <p>.divaa1 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation-name: colors;<br>
+          animation-duration: 10s;<br>
+          }<br>
+        @keyframes colors {<br>
+          from {background-color: var(--main-color-400);}<br>
+          to {background-color: var(--main-color-100);}<br>
+        
+        }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>
+  
+    <div class="cards-content">
+      <h2 id="tp10">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation-name: eastbound</h3>
+          </div>
+          <p class="definition2">The animation-name property specifies a name for the @keyframes animation.</p>
+      
+      <div class="divaa2">
+
+        <p>.divaa2 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation-name: eastbound;<br>
+          animation: eastbound infinite;<br>
+          animation-duration: 15s;<br>
+          }<br>
+          @keyframes eastbound {<br>
+            from {left: 0px;}<br>
+            to {left: 200px;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp11" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation-duration: 6s</h3>
+          </div>
+          <p class="definition2">The animation-duration property defines how long an animation should take to complete one cycle.</p>
+      <div class="divaa3">
+
+        <p>.divaa3 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation: southbound infinite;<br>
+          animation-duration: 6s;<br>
+          }<br>
+          @keyframes southbound {<br>
+            from {top: 0px;}<br>
+            to {top: 200px;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp12" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation: delayeast 5s infinite</h3>
+          </div>
+          <p class="definition2">The animation-delay property specifies a delay for the start of an animation.</p>
+      
+      <div class="divaa4">
+
+        <p>.divaa4 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation: delayeast 5s infinite;<br>
+          animation-delay: 6s;<br>
+          }<br>
+          @keyframes southbound {<br>
+            from {top: 0px;}<br>
+            to {top: 200px;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp13" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation-iteration-count: 6</h3>
+          </div>
+          <p class="definition2">The animation-iteration-count property specifies the number of times an animation should be played.</p>
+      
+      <div class="divaa5">
+
+        <p>.divaa5 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation: southbound-6 3s;<br>
+          animation-iteration-count: 6;<br>
+          }<br>
+          @keyframes southbound-6 {<br>
+            from {top: 0px;}<br>
+            to {top: 200px;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp14" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation-direction: alternate</h3>
+          </div>
+          <p class="definition2">The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles.</p>
+      
+      <div class="divaa6">
+
+        <p>.divaa6 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation: eswenoso 5s 2;<br>
+          animation-direction: alternate;<br>
+          }<br>
+          @keyframes eswenoso {<br>
+            0%   {background: red; left: 0px; top: 0px;}<br>
+            25%  {background: yellow; left: 200px; top: 0px;}<br>
+            50%  {background: blue; left: 200px; top: 200px;}<br>
+            75%  {background: green; left: 0px; top: 200px;}<br>
+            100% {background: red; left: 0px; top: 0px;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>
+    <div class="cards-content">
+      <h2 id="tp15" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation-timing-function: linear</h3>
+          </div>
+          <p class="definition2">The animation-timing-function specifies the speed curve of an animation.</p>
+      
+      <div class="divaa7">
+
+        <p>.divaa7 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation: eastantiming 5s infinite;<br>
+          animation-timing-function: linear;<br>
+          }<br>
+          @keyframes eastantiming {<br>
+            from {left: 0px;}<br>
+            to {left: 200px;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>  
+    <div class="cards-content">
+      <h2 id="tp16" class="tp9">Animation Properties</h2> 
+      <div class="example-code-cardanimation">
+          <div class="tr202">
+            <h3 class="tabhead">animation-fill-mode: forwards</h3>
+          </div>
+          <p class="definition2">The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both).</p>
+      
+      <div class="divaa8">
+
+        <p>.divaa5 {<br>
+          width: 300px;<br>
+          height: 200px;<br>
+          background-color: var(--main-color-400);<br>
+          animation: southboundfill 10s;<br>
+          animation-fill-mode: forwards;<br>
+          }<br>
+          @keyframes southboundfill {<br>
+            from {top: 0px;}<br>
+            to {top: 200px; background-color: purple;}<br>
+          }
+        </p>
+     
+      </div>
+      
+    </div>
+    </div>   
+  </section>
+  </div>
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>

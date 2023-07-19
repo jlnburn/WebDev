@@ -1,0 +1,487 @@
+/*
+  Name: Student Name
+*/
+
+/* Default Styles */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Lato:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+:root {
+  --main-color-100: hsl(10, 25%, 90%);
+  --main-color-400: hsl(10, 35%, 50%);
+  --main-color-800: hsl(10, 25%, 15%);
+  --main-color-200: hsl(10, 45%, 85%);
+  --main-color-600: hsl(10, 35%, 75%);
+  --accent-color-200: hsl(190, 35%, 90%);
+  --accent-color-400: hsl(190, 40%, 50%);
+  --accent-color-600: hsl(190, 40%, 30%);
+  --accent-color-800: hsl(190, 25%, 15%);
+  --font-body: "Lato", sans-serif;
+  --font-headings: "Roboto", sans-serif;
+  --font-code: "IBM Plex Mono", monospace;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20rem 1fr;
+  font-family: var(--font-body);
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+  gap: .5rem;
+  overflow: hidden;
+}
+#left-side {
+  grid-column: 1;
+  background-color: var(--main-color-600);
+  padding: 1rem;
+  box-shadow: 0 5px 8px var(--accent-color-800);
+  display: grid;
+  grid-template-rows: 5rem auto 10rem;
+}
+#student-info {
+  grid-row: 3;
+}
+#student-info p {
+  padding: .5rem 0;
+}
+p {
+  padding: .5rem 0 1rem;
+}
+#student-info span {
+  font-weight: 700;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  color: var(--accent-color-600);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: .5rem;
+  font-weight: 700;
+}
+nav a:hover, a.active {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+}
+code {
+  font-family: var(--font-code);
+}
+main {
+  grid-column: 2;
+  padding: 1rem;
+  position: relative;
+  overflow-y: auto;
+  gap: 1rem; 
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+dt {
+  padding: .75rem;
+  font-weight: 700;
+}
+dd {
+  margin-left: 2rem;
+}
+/* Transform Styles below this comment */
+
+.example {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+ 
+}
+
+.rotate-left {
+  grid-column: 1;
+  font-size: 2.5rem;
+  width: max-content;
+  text-align: center;
+  writing-mode:vertical-rl;
+  transform-origin: center;
+  transform: rotate(180deg);
+  transform: translate(-3rem);
+  transform: translate(-100%); 
+  border-left: solid 4px var(--accent-color-600); 
+  margin-left: -1em;                           
+ } 
+
+ .rotate-left {
+
+ transform: rotateZ(-180deg)
+
+
+ }
+
+   
+.content {
+  display: grid;
+  grid-column: 2;
+  text-align: left;
+  display: inline;
+
+
+  
+  }
+
+  .example-code {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    gap: .5rem;
+    width: 90%;
+    margin: auto;
+    
+
+  }
+  
+   .html-code {
+    border-top: solid 1px var(--accent-color-600);
+    border-right: solid 1px var(--accent-color-600);
+    border-bottom: solid 1px var(--accent-color-600);
+    border-left: solid 6px var(--accent-color-600);
+    background-color: var(--accent-color-200);
+    height: 350px;
+    width: 75%;
+  }
+
+  .css-code {
+    border-top: solid 1px var(--accent-color-600);
+    border-right: solid 1px var(--accent-color-600);
+    border-bottom: solid 1px var(--accent-color-600);
+    border-left: solid 6px var(--accent-color-600);
+    background-color: var(--accent-color-200);
+    width: 100%;
+    height: 350px;
+    float: right;
+  }
+
+
+
+  .example-code h3 {
+    background-color: var(--accent-color-600);
+    color: var(--accent-color-200);
+    padding: .5rem;
+  }
+
+.example-code pre {
+  margin: .5rem;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.img-polaroid {
+  width: 300px;
+  height: 350px;
+  padding: 1rem;
+  background-color: white;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  margin: 2rem;
+  margin-right: 40%;
+  float: right;
+  box-shadow: -3px -3px 6px 0px var(--accent-color-800);
+  transform-origin: top;
+  transform: rotate(10deg);
+}
+
+.img-polaroid img {
+  width: 100%;
+  height: auto;
+  border: solid lightgray 1px;
+}
+
+
+.img-title {
+  text-transform: uppercase;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.img-attribution {
+  font-size: smaller;
+  text-align: right;
+}
+
+
+/* Transition Styles below this comment */
+
+.demo {
+  background-color: white;
+  border: solid 1px var(--main-color-800);
+  border-radius: .5rem;
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px 0px;
+}
+
+
+
+.demo nav {
+  background-color: var(--main-color-800);
+  display: grid;
+  place-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: .5rem;
+  box-shadow: 10px 10px 5px 0px;
+}
+
+.horizontal-menu {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  position: relative;
+}
+
+.horizontal-menu > li {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.dropdown-title, .dropdown-menu > li > a, .horizontal-menu > li > a {
+  color: var(--main-color-100);
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.dropdown-title, .dropdown-menu > li > a:focus, .horizontal-menu > li > a:focus {
+  outline: none;
+}
+
+.dropdown-title, .horizontal-menu > li > a {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-out;
+}
+
+.horizontal-menu > li > a:hover {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+}
+
+.horizontal-menu > li > a:focus {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+
+}
+
+ .dropdown-title:hover {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+}
+
+.dropdown-title:focus {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > .dropdown-title {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown > .dropdown-title::after {
+  content: "";
+  border: solid transparent .35rem;
+  border-top: solid var(--accent-color-200);
+  opacity: .7;
+  margin-left: .35rem;
+  transform: translateY(.3rem);
+}
+
+
+
+.dropdown:hover .dropdown-title::after {
+  border-top: solid 3px var(--accent-color-800);
+}
+
+.dropdown:focus-within .dropdown-title::after {
+  border-top: solid 3px var(--accent-color-800);
+}
+
+.dropdown > .dropdown-menu {
+  position: absolute;
+  top: calc(100% - .25rem);
+  left: 50%;
+  min-width: 15ch;
+  background-color: var(--main-color-400);
+  box-shadow: 5px 5px 5px 0px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  transform-origin: top center;
+  transform: rotateX(-90deg);
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: .3;
+  border-radius: .5rem;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-out;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: .5rem;
+  opacity: 0;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+ .dropdown-menu a:hover, 
+ .dropdown-menu a:focus {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropdown:focus-within > 
+.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0);
+  transform: translateX(-50%);
+}
+
+.dropdown:hover >
+.dropdown-menu a,
+.dropdown:focus-within > 
+.dropdown-menu a {
+  opacity: 1;
+}
+
+
+
+.example-code1 {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  gap: .5rem;
+  width: 90%;
+  margin: auto;
+  
+
+}
+
+ .html-code1 {
+  border-top: solid 1px var(--accent-color-600);
+  border-right: solid 1px var(--accent-color-600);
+  border-bottom: solid 1px var(--accent-color-600);
+  border-left: solid 6px var(--accent-color-600);
+  background-color: var(--accent-color-200);
+  height: 500px;
+  width: 50%;
+}
+
+.css-code1 {
+  border-top: solid 1px var(--accent-color-600);
+  border-right: solid 1px var(--accent-color-600);
+  border-bottom: solid 1px var(--accent-color-600);
+  border-left: solid 6px var(--accent-color-600);
+  background-color: var(--accent-color-200);
+  width: 50%;
+  height: 500px;
+  float: right;
+  
+}
+
+
+
+.example-code1 h3 {
+  background-color: var(--accent-color-600);
+  color: var(--accent-color-200);
+  padding: .5rem;
+}
+
+.example-code1 pre {
+margin: .5rem;
+font-size: 1rem;
+white-space: pre-wrap;
+word-break: break-all;
+}
+
+#trans {
+  font-size:small;
+}
+
+/* Animation Styles below this comment */
+
+@keyframes breathe {
+  from {box-shadow: 0px 0px 10px 0px var(--accent-color-600);
+    border-color: var(--accent-color-200);
+  }
+
+  50% {
+    box-shadow: 0 0 10px var(--accent-color-200);
+  }
+
+  to {
+    box-shadow: 0px 0px 10px 0px var(--accent-color-600);
+    border-color: var(--accent-color-200);
+
+  }
+
+}
+
+.breathe {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  border: solid 1px var(--accent-color-400);
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+  border-radius: 1rem;
+}
+
+.breathe:hover, .demo > .breathe:focus {
+  background-color: var(--accent-color-800);
+  color: var(--accent-color-200);
+  animation-name: breathe;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;  
+}
+
+#sfont {
+  font-size: small;
+}

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content ="Julian Burnley">
+  <meta name="keywords" content="transformation, css, 'Cartesian coordinate system', translate, scale">
+  <meta name="description" content= "css transforms practice">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS233DA | Lsn7 Practice Activities</title>
+  <link rel="stylesheet" href="/Lesson7Practice/css/main.css">
+  <!-- Add author, keywords, and description metadata -->
+
+</head>
+<body>
+  <section id="left-side">
+    <h1>Lesson 7 Practice Activities</h1>
+    <nav>
+      <ul>
+        <li><a href="/Lesson7Practice/index.html">Home</a></li>
+        <li><a href="/Lesson7Practice/transforms.html">Transforms</a></li>
+        <li><a href="/Lesson7Practice/animations.html">Animations</a></li>
+        <li><a href="/Lesson7Practice/transitions.html">Transitions</a></li>
+      </ul>
+    </nav>
+    <div id="student-info">
+      <p><span>Name:</span> Julian Burnley</p>
+      <p><span>MEID:</span>JUL2216252</p>
+      <p><span>GitHub Username:</span> JUL2216252</p>
+    </div>
+  </section>
+<main>
+    
+<section class="example">
+    <h2 class="rotate-left">Text Transformation</h2>
+
+    <div class="content">
+        <p>
+            To rotate a piece of text, you can use the transform property. Rotations go clockwise, so to turn the text anti-clockwise you need to use a negative degree value. The origin helps to set the point where the rotation occurs. The translate property value allows you to move the text into position.
+
+        </p>
+    
+    
+    <div class="example-code">
+
+        <div class="html-code">
+
+            <h3>HTML Code</h3>
+
+            <pre>
+<code>&lt;h2 class=&quot;rotate-left&quot;&gt;Text Transformation&lt;/h2&gt;</code>
+            </pre>
+
+        </div>
+        <div class="css-code">
+
+            <h3>CSS Code</h3>
+
+            <pre>
+<code>
+.rotate-left {
+    display: grid;
+    grid-column: 1;
+    font-size: 2.5rem;
+    width: max-content;
+    text-align: right;
+    writing-mode: vertical-rl;
+    transform-origin: top left;
+    transform: rotateZ(180deg);
+    transform: translateX(-3rem);
+    transform: translateY(-100%);
+    border-left: solid 4px var(--accent-color-600); 
+} 
+</code>
+            </pre>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+<section class="example">
+    <h2 class="rotate-left">Image Transformation</h2>
+
+    <div>
+        <p>
+            You can stylize images to look like old-school polaroid images where a small rotation can help add a bit more style to the image.
+
+        </p>
+
+        <div class="img-polaroid">
+            <img src="/Lesson7Practice/images/curiosity_selfie-square.jpg" alt="Curiousity Selfie">
+<div>
+    <p class="img-title">CURIOSITY ROVER SELFIE</p>
+            <p class="img-attribution">Source: NASA.gov<a href="https://www.nasa.gov/sites/default/files/thumbnails/image/curiosity_selfie.jpg">NASA.gov</a></p>
+        </div>
+        </div>
+
+    </div>
+    
+
+    <div class="content">
+
+
+
+
+    <div class="example-code">
+
+        <div class="html-code">
+
+            <h3>HTML Code</h3>
+
+            <pre>
+<code>&lt;h2 class=&quot;rotate-left&quot;&gt;Image Transformation&lt;/h2&gt;
+</code>
+            </pre>
+
+        </div>
+        <div class="css-code">
+
+            <h3>CSS Code</h3>
+
+            <pre>
+<code>
+
+.img-polaroid {
+        width: 300px;
+        height: 350px;
+        padding: 1rem;
+        background-color: white;
+        border: solid lightgray 1px;
+        border-radius: 5px;
+        margin: 2rem;
+        float: right;
+        box-shadow: -3px -3px 6px 0px var(--accent-color-800);
+        transform-origin: top;
+        transform: rotate(10deg);
+}
+      
+
+</code>
+            </pre>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+</main>
+</body>
+</html>

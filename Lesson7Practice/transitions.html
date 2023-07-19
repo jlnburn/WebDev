@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content ="Julian Burnley">
+  <meta name="keywords" content="transformation, css, 'Cartesian coordinate system', translate, scale">
+  <meta name="description" content= "css transforms practice">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS233DA | Lsn7 Practice Activities</title>
+  <link rel="stylesheet" href="/Lesson7Practice/css/main.css">
+  <!-- Add author, keywords, and description metadata -->
+
+</head>
+<body>
+  <section id="left-side">
+    <h1>Lesson 7 Practice Activities</h1>
+    <nav>
+      <ul>
+        <li><a href="/Lesson7Practice/index.html">Home</a></li>
+        <li><a href="/Lesson7Practice/transforms.html">Transforms</a></li>
+        <li><a href="/Lesson7Practice/animations.html">Animations</a></li>
+        <li><a href="/Lesson7Practice/transitions.html">Transitions</a></li>
+      </ul>
+    </nav>
+    <div id="student-info">
+      <p><span>Name:</span> Julian Burnley</p>
+      <p><span>MEID:</span>JUL2216252</p>
+      <p><span>GitHub Username:</span> JUL2216252</p>
+    </div>
+  </section>
+<main>
+<section class="example">
+        <h2 class="rotate-left">Menu Slide Transition</h2>  
+    <div class="content">
+<p>Adding a subtle transition effects to menus can help a user feel comfortable with a user interface as it becomes more natural to use. Sudden changes between states can be jarring. For dropdown menus, sliding the menu down can be one effect that can help improve the user experience for users.</p>
+
+<div class="demo">
+
+<nav>
+   <ul class="horizontal-menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown"><button class="dropdown-title">Main Link 1</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Sub-link 1</a></li>
+                <li><a href="#">Sub-link 2</a></li>
+                <li><a href="#">Sub-link 3</a></li>
+                <li><a href="#">Sub-link 4</a></li>
+                <li><a href="#">Sub-link 5</a></li>
+            </ul>
+        
+        </li>
+        <li><a href="#">Main Link 2</a></li>
+   </ul>
+  </nav>
+</div>
+
+  <div class="example-code1">
+  <div class="html-code1" id="html1">
+<h3>HTML Code</h3>
+<pre>
+<code id="trans">
+  &lt;nav&gt;
+  &lt;ul class=&quot;horizontal-menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;button
+     class=&quot;dropdown-title&quot;&gt;Main Link 1&lt;/button&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub-link 1&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub-link 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub-link 3&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub-link 4&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub-link 5&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Main Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;transitions.html&quot;&gt;Transitions&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+
+</code>
+</pre>
+  </div>
+<div class="css-code1" id="css1">
+<h3>CSS Code</h3>
+<pre>
+<code> 
+  .dropdown-menu a:hover, 
+  .dropdown-menu a:focus {
+   background-color: var(--accent-color-200);
+   color: var(--accent-color-800);
+ }
+ 
+  .dropdown:hover &gt; .dropdown-menu,
+   .dropdown:focus-within &gt; 
+   .dropdown-menu {
+   opacity: 1;
+   visibility: visible;
+   transform: rotateX(0);
+   transform: translateX(-50%);
+ }
+</code>
+</pre>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body>
+</html>
