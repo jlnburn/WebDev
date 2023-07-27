@@ -1,0 +1,299 @@
+/*  
+  Name:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@200;400;700&display=swap');
+
+:root {
+  --main-color-100: hsl(350, 50%, 90%);
+  --main-color-200: hsl(350, 50%, 80%);
+  --main-color-400: hsl(350, 50%, 50%);
+  --main-color-600: hsl(350, 50%, 30%);
+  --main-color-800: hsl(350, 25%, 15%);
+  --accent-color-200: hsl(170, 50%, 80%);
+  --accent-color-500: hsl(88, 100%, 90%);
+  --accent-color-600: hsl(170, 35%, 40%);
+  --accent-color-700: hsl(159, 89%, 83%);
+  --accent-color-800: hsl(170, 25%, 15%);
+  --shadow-color-800: hsla(350, 25%, 15%, .7);
+  --font-body: 'Open Sans', sans-serif;
+  --font-headings: 'Roboto Slab', serif;
+  --font-code: 'Noto Sans Mono', monospace;
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--main-color-800);
+  background-color: var(--main-color-100);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 7rem auto 3rem;
+}
+header {
+  background-color: var(--main-color-800);
+  color: var(--main-color-100);
+  box-shadow: 3px 0 5px var(--shadow-color-800);
+  padding: .5rem 0 0;
+  grid-row: span 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+header h1 {
+  text-align: center;
+}
+nav {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+  height: 3rem;
+}
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: var(--accent-color-800);
+  padding: .4rem;
+}
+nav a:hover, nav a:focus {
+  border-bottom: 3px solid var(--main-color-400);
+  color: var(--main-color-600);
+  outline: none;
+}
+main {
+  grid-row: 2;
+  padding: 1rem;
+  background-image: linear-gradient(-30deg, var(--main-color-200), var(--main-color-100));
+}
+h2, h3, h4, h5, h6 {
+  margin: .5rem 0 1rem;
+}
+main p {
+  margin-left: .5rem;
+}
+#activity-list {
+  margin: .5rem 0 .5rem 3rem;
+}
+#activity-list li {
+  padding: .25rem;
+}
+footer {
+  grid-row: 3;
+  background-color: var(--main-color-400);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--main-color-100);
+}
+/* graphical-element styles */
+.image-caption {
+  background-color: white;
+  border-top: solid thin var(--accent-color-600);
+  border-bottom: thin solid var(--accent-color-600);
+  border-left: thin solid var(--accent-color-600);
+  border-right: thin solid var(--accent-color-600);
+  border-radius: .5rem;
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+
+ picture {
+  grid-area: 1/1;
+  
+
+
+}
+
+figcaption {
+  display: grid;
+  grid-area: 1/1;
+  background-color: hsla(0, 0%, 0%);
+  color: var(--main-color-100);
+  padding: .5rem;
+  height: max-content;
+  text-align: center;
+  transform: rotateX(-90deg);
+  transform: translate(0%);
+  transition-property: all;
+  transition-duration: 200ms;
+  transform-origin: top;
+
+}
+
+figcaption :hover figcaption {
+  transform: rotateX(0deg);
+}
+
+img {
+  width: 100%;
+}
+
+.image-source {
+  font-size: .85em;
+}
+
+.code-block {
+  background-color: white;
+  border: thin solid var(--accent-color-600) ;
+  border-radius: .5rem;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr;
+}
+
+pre {
+  font-family: var(--font-code);
+  background-color: var(--main-color-800);
+  color: var(--main-color-100);
+  padding: .5rem;
+  overflow: auto;
+  border-radius: .5rem;
+
+
+}
+
+#caption {
+  font-weight: bold;
+  padding-bottom: 5rem;
+}
+
+
+/* graphic-effect styles */
+
+.filter-image {
+  background-color: white;
+  border: thin solid var(--accent-color-600);
+  border-radius: .5rem;
+  width: 25rem;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 10px 13px 1px var(--shadow-color-800);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+picture {
+  grid-area: 1/1;
+  overflow: hidden;
+}
+
+#figcap {
+  grid-area: 1/1;
+  background-color: hsla(0, 0%, 0%, .5);
+  color: var(--main-color-100);
+  padding: .5rem;
+  height: max-content;
+  text-align: center;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  transition-duration: 200ms all;
+
+}
+
+.filter-image:hover #figcap  {
+  transform: rotateX(0deg);
+  z-index: 1;
+  color: white;
+}
+
+#blur {
+  width: 100%;
+  filter: saturate(30%) blur(2px);
+}
+
+#blur:hover {
+  filter: saturate(100%);
+  transform: scale(1.15);
+}
+
+.image-source {
+  font-size: .85em;
+  margin-top: .5rem;
+}
+
+
+
+
+/* gradient styles */
+
+.action-menu {
+  background-color: var(--accent-color-200);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 3rem;
+  padding: .5rem;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+}
+
+.gradient {
+  border-radius: 2em;
+  margin: .5rem;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: none;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+  background-color: linear-gradient(to right var(--accent-color-500), var(--accent-color-700));
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.gradient:hover, .gradient:focus {
+  
+  background-image: linear-gradient(to left, var(--main-color-600),var(--main-color-400));
+}
+
+ .button-title {
+  visibility: hidden;
+  position: absolute;
+  margin-left: .5rem;
+}
+
+.gradient:hover
+ .button-title, 
+ .gradient:focus 
+ .button-title {
+  visibility: visible;
+  position: relative;
+}
+
+/* audio-video styles */
+
+/* canvas styles */
+
+
+
+#canvas {
+background-color: var(--accent-color-200);
+}
+
+
+
+
+
+/* embed media styles */

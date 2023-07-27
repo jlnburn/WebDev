@@ -1,0 +1,348 @@
+
+/*
+ Name : Julian Burnley
+Course: CIS233DA
+Section: 12988 
+Instructor : Brian Thurber
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@200;400;700&display=swap');
+
+:root {
+  --main-color-100: hsl(223, 73%, 16%);
+  --main-color-200: hwb(348 0% 56%);
+  --main-color-400: hsl(174, 69%, 20%);
+  --main-color-600: hsl(190°, 100%, 50%);
+  --main-color-800: hsl(217, 89%, 64%);
+  --accent-color-200: hsl(187, 33%, 89%);
+  --accent-color-600: hsl(0, 0%, 100%);
+  --accent-color-800: hsl(293, 41%, 47%);
+  --shadow-color-800: rgba(15, 3, 6, 0.7);
+  --font-body: 'Open Sans', sans-serif;
+  --font-headings: 'Roboto Slab', serif;
+  --font-code: 'Noto Sans Mono', monospace;
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 30rem 1fr;
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%);
+  color: var(--accent-color-600);
+  gap: .5em;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "left header"
+    "left main"
+    "left main"
+    "left main";
+  gap: .5em;
+  grid-template-columns: 18em 1fr;
+  grid-template-rows: 28vh auto;
+}
+
+
+
+
+.header {
+  grid-area: header;
+  height: 10vh;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.header1 {
+  grid-area: header;
+  height: 7vh;
+  margin-top: 2em;
+  text-align: center;
+
+
+}
+
+.main {
+  grid-area: main;
+  padding: 2em;
+  
+}
+
+.main1 {
+  grid-area: main;
+  padding: 2em;
+  
+  
+}
+
+
+.container > .left5 {
+  background-color: var(--main-color-800);
+  border-right: solid 2px var(--main-color-200);
+  box-shadow: 10px 10px 5px 0px var(--shadow-color-800);
+  grid-area: left;
+  height: 100%;
+}
+
+.left-side1 {
+  height: 95vh;
+  background-color: var(--main-color-800);
+}
+
+.grapheff {
+  margin-top: -14em;
+}
+
+.mediaele {
+  margin-top: 3em;
+}
+
+h3, h1 {
+  margin-bottom: .25em;
+}
+
+table {
+  padding: 5px;
+  box-shadow: 10px 10px 5px 0px var(--shadow-color-800);
+ 
+}
+
+th {
+  
+  border: 3px solid var(--main-color-200);
+  padding: 1px;
+}
+
+td {
+  border: 1px solid var(--main-color-400);
+  padding: 1px;
+}
+
+    
+tr:nth-child(even) {
+  background-color: var(--main-color-100);
+  color: var(--accent-color-600);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba((0,212,255,1) 100%);
+  color: var(--accent-color-600);
+}
+th{
+  background-color:var(--accent-color-600);
+  color: var(--shadow-color-800);
+  text-transform: uppercase;
+}
+
+#a, #b, #c, #d, #e, #f {
+font-family: var(--font-code);
+}
+
+#student-info  {
+  font-weight: 700;
+  margin-top: 13em;
+  margin-left: 1em;
+
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-headings);
+  font-size: larger;
+  font-weight: bold;
+}
+
+nav > ul > li {
+  margin-top: 15em;
+  margin-left: 2em;
+  list-style: none;
+}
+
+nav a:hover, nav a:focus {
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%);
+
+  outline: none;
+}
+
+#nav {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  font-size: large;
+  
+
+  
+}
+
+nav {
+  margin-top: -10em
+ 
+}
+
+.lesson {
+  margin-top: -15em;
+}
+
+.lesson > h2, p {
+  margin-bottom: 1em;
+}
+
+
+/*
+body {
+	margin: 2em;
+  background-color: var(--main-color-400);
+  color: var(--font-body);
+  height: 100%;
+	
+}
+
+main {
+  height: 100%;
+}
+
+header {
+  color: var(--font-headings);
+  background-color: var(--main-color-800);
+ font-size: x-large;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:left;
+  
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 12% 88%;	
+  height: 100%;
+ 
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-headings);
+
+ 
+
+
+}
+nav a:hover, nav a:focus {
+  background-image: linear-gradient(rgb(241, 238, 68), rgb(241, 21, 95));
+  outline: none;
+  padding: 10px;
+
+}
+#nav {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  font-size: large;
+  
+}
+
+nav {
+  background-color: var(--accent-color-600);
+  height: 20vh;
+ margin-top: 40vh;
+  
+}
+
+
+
+ h2, h3, h4, h5, h6 {
+  margin: 1rem 0 .5rem;
+}
+
+h1 {
+  margin: 1rem 0 .5rem;
+
+  margin-bottom: .5em;
+}
+
+li {
+  padding: 1em;
+  border-top: thin solid;
+  border-bottom: thin solid;
+ 
+  
+}
+
+
+.left {
+  grid-column: 1;
+  background-color: var(--main-color-200);
+  color: var(--main-color-600);
+  padding: 1em;
+  box-shadow: 0 5px 15px var(--main-color-200);
+  display: grid;
+  grid-template-rows: 5rem auto 10rem;
+  height: 120vh;
+  width: 20%;
+  
+  
+}
+.right {
+background-color: var(--main-color-200);
+height: 100vh;
+margin-right: -2em;
+margin-top: -2em;
+display: flex;
+justify-content: center;
+}
+
+
+.container {
+	
+	height: 100%;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1px;
+  border-bottom: thick solid black;
+}
+
+th, td {
+  padding: 6px;
+}
+
+    
+tr:nth-child(even) {
+  background-color: var(--accent-color-800);
+  color: var(--accent-color-600);
+}
+
+th{
+  background-color:var(--main-color-600);
+  color: var(--accent-color-600);
+  text-transform: uppercase;
+}
+
+#a, #b, #c, #d, #e, #f {
+font-family: var(--font-code);
+}
+
+#student-info p {
+  display: inline-flex;
+  padding: 2rem;
+  font-weight: 700;
+  font-size: larger;
+}
+p {
+  padding: 2rem 0 1rem;
+  font-weight: 700;
+  font-size: larger;
+}
+
+*/
